@@ -1,18 +1,18 @@
-<div class="MainGrid PageWrap">
-  <header>
+<div class="MainGrid" id="PageWrap">
+  <header class="SubGrid MainItem" id="HeaderWrap">
     <app-corenav></app-corenav>
   </header>
   
-  <div class="SubGrid ContentWrap">
-    <aside>
+  <div class="SubGrid MainItem" id="BodyWrap">
+    <aside class="SubItem">
       <app-feednav></app-feednav>
     </aside>
-    <main>
+    <main class="SubItem">
       <router-outlet></router-outlet>
     </main>
   </div>
   
-  <footer>
+  <footer class="SubGrid MainItem" id="FooterWrap">
     <app-footnav></app-footnav>
   </footer>
 </div>

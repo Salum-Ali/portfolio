@@ -5,16 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-// Material
+// Pages
+
+// Materials
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 // Seections
 import { FeednavComponent } from './feednav/feednav.component';
 import { FootnavComponent } from './footnav/footnav.component';
 import { CorenavComponent } from './corenav/corenav.component';
+import { TopjumpComponent } from './topjump/topjump.component';
+import { BottomjumpComponent } from './bottomjump/bottomjump.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +27,8 @@ import { CorenavComponent } from './corenav/corenav.component';
     FeednavComponent,
     FootnavComponent,
     CorenavComponent,
+    TopjumpComponent,
+    BottomjumpComponent,
 
   ],
   imports: [
@@ -30,7 +37,8 @@ import { CorenavComponent } from './corenav/corenav.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatMenuModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
