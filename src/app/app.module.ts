@@ -22,6 +22,10 @@ import { TopjumpComponent } from './topjump/topjump.component';
 import { BottomjumpComponent } from './bottomjump/bottomjump.component';
 import { MainblurbComponent } from './mainblurb/mainblurb.component';
 
+// Others
+// Import ngx-twitter-timeline (Twitter Feed Widget)
+import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +44,9 @@ import { MainblurbComponent } from './mainblurb/mainblurb.component';
     MatToolbarModule,
     MatMenuModule,
     MatSidenavModule,
-    MatDividerModule
+    MatDividerModule,
+    // Specify library as an import (Twitter Feed Widget)
+    NgxTwitterTimelineModule
   ],
   providers: [],
   bootstrap: [AppComponent]
