@@ -7,26 +7,54 @@
 			<hr class="QuarterWide">
 		</mat-toolbar-row>
 		<mat-toolbar-row class="HornavContent">
-			<button class="HornavButton" mat-button>Home</button>
+			<button class="HornavButton" mat-button>
+				Home
+			</button>
 
-			<button class="HornavButton" mat-button [matMenuTriggerFor]="AboutPage">About</button>
+			<button class="HornavButton" mat-button [matMenuTriggerFor]="AboutPage">
+				About
+			</button>
 			<mat-menu #AboutPage="matMenu" xPosition="after">
-				<button mat-menu-item>About ME</button>
-				<button mat-menu-item>This Website</button>
+				<button mat-menu-item>
+					About ME
+				</button>
+				<button mat-menu-item>
+					This Website
+				</button>
 			</mat-menu>
-			<button class="HornavButton" mat-button [matMenuTriggerFor]="ResumePage">Resume</button>
+			<button class="HornavButton" mat-button [matMenuTriggerFor]="ResumePage">
+				Resume
+			</button>
 			<mat-menu #ResumePage="matMenu" xPosition="after">
-				<button mat-menu-item>Complete Resume</button>
-				<button mat-menu-item>Tag Search</button>
-				<button mat-menu-item>3D Modeling</button>
-				<button mat-menu-item>Animation</button>
-				<button mat-menu-item>2D Art</button>
+				<button mat-menu-item>
+					Complete Resume
+				</button>
+				<button mat-menu-item>
+					Tag Search
+				</button>
+				<button mat-menu-item>
+					3D Modeling
+				</button>
+				<button mat-menu-item>
+					Animation
+				</button>
+				<button mat-menu-item>
+					2D Art
+				</button>
 			</mat-menu>
-			<button class="HornavButton" mat-button [matMenuTriggerFor]="ContactPage">Contact Me</button>
+			<button class="HornavButton" mat-button [matMenuTriggerFor]="ContactPage">
+				Contact Me
+			</button>
 			<mat-menu #ContactPage="matMenu" xPosition="after">
-				<button mat-menu-item>Contact Info</button>
-				<button mat-menu-item>Social Links</button>
-				<button mat-menu-item>Commissions</button>
+				<button mat-menu-item>
+					Contact Info
+				</button>
+				<button mat-menu-item>
+					Social Links
+				</button>
+				<button mat-menu-item disabled>
+					Commissions
+				</button>
 			</mat-menu>
 		</mat-toolbar-row>
 	</mat-toolbar>
