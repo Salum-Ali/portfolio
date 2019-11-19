@@ -20,6 +20,7 @@ import { FootnavComponent } from './footnav/footnav.component';
 import { CorenavComponent } from './corenav/corenav.component';
 import { TopjumpComponent } from './topjump/topjump.component';
 import { BottomjumpComponent } from './bottomjump/bottomjump.component';
+import { MainblurbComponent } from './mainblurb/mainblurb.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { BottomjumpComponent } from './bottomjump/bottomjump.component';
     CorenavComponent,
     TopjumpComponent,
     BottomjumpComponent,
+    MainblurbComponent,
 
   ],
   imports: [
