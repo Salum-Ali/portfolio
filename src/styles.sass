@@ -13,15 +13,22 @@
 	#HeaderWrap
 		grid-column: 1/13
 	#BodyWrap
+		padding: 1em
 		grid-column: 2/12
 		border: 0.5em ridge white
-		// grid-template-columns: repeat(10, 1fr)
+		display: grid
+		grid-template-columns: repeat(10, 1fr)
 		.SubItem
 		#FeedNav
-			grid-column: 2/4
-			border: 1em ridge white
+			grid-column: 1/4
+			border: 0.5em ridge white
+		#RouterContent
+			grid-column: 4/11
+			border: 0.5em ridge white
 	#FooterWrap
-		grid-column: 1/13
+		grid-column: 3/11
+		// border: 0.5em ridge white
+		// ^ NTS: Above border was to proove a concept ^
 	// hr
 	.QuarterWide
 		width: 25%
