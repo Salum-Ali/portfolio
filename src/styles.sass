@@ -1,8 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
-#PageWrap
+.MainGrid#PageWrap
 	// margin: 2em 0em 2em 0em
-	height: 100vh
+	// ^Is the above even needed? probably not ^
+	// height: 100vh
 	display: grid
-	hr
+	grid-template-columns: repeat(12, 1fr)
+	// grid-template-rows: repeat(3, 1fr)
+	// grid-column-gap: 1em
+	grid-row-gap: 1em
+	grid-auto-rows: auto
+	.MainItem
+	#HeaderWrap
+		grid-column: 1/13
+	#BodyWrap
+		grid-column: 2/12
+		border: 0.5em ridge white
+		// grid-template-columns: repeat(10, 1fr)
+		.SubItem
+		#FeedNav
+			grid-column: 2/4
+			border: 1em ridge white
+	#FooterWrap
+		grid-column: 1/13
+	// hr
 	.QuarterWide
 		width: 25%
