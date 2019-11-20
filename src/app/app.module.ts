@@ -12,7 +12,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
-
+import {MatTreeModule} from '@angular/material/tree';
+import { MatIconModule, MatButtonModule } from '@angular/material';
 
 // Seections
 import { FeednavComponent } from './feednav/feednav.component';
@@ -45,6 +46,10 @@ import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
     MatMenuModule,
     MatSidenavModule,
     MatDividerModule,
+    MatTreeModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatButtonModule,
     // Specify library as an import (Twitter Feed Widget)
     NgxTwitterTimelineModule
   ],

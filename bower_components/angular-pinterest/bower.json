@@ -1,0 +1,25 @@
+{
+  "name": "angular-pinterest",
+  "version": "1.2.0",
+  "authors": [
+    "Jason Watmore <jason@pointblankdevelopment.com.au> (https://www.pointblankdevelopment.com.au/)"
+  ],
+  "description": "AngularJS directives for Pinterest buttons and widgets",
+  "main": "angular-pinterest.js",
+  "keywords": [
+    "AngularJS",
+    "Pinterest"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.16"
+  }
+}

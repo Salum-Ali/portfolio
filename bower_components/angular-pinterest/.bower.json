@@ -1,0 +1,35 @@
+{
+  "name": "angular-pinterest",
+  "version": "1.2.0",
+  "authors": [
+    "Jason Watmore <jason@pointblankdevelopment.com.au> (https://www.pointblankdevelopment.com.au/)"
+  ],
+  "description": "AngularJS directives for Pinterest buttons and widgets",
+  "main": "angular-pinterest.js",
+  "keywords": [
+    "AngularJS",
+    "Pinterest"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/cornflourblue/angular-pinterest",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.16"
+  },
+  "_release": "1.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.2.0",
+    "commit": "020f70adf76e949ad423cb2b1d861aefe5522126"
+  },
+  "_source": "https://github.com/cornflourblue/angular-pinterest.git",
+  "_target": "^1.2.0",
+  "_originalSource": "angular-pinterest",
+  "_direct": true
+}
