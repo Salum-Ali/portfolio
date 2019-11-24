@@ -16,12 +16,12 @@ import {MatTreeModule} from '@angular/material/tree';
 import { MatIconModule, MatButtonModule } from '@angular/material';
 
 // Seections
-import { FeednavComponent } from './feednav/feednav.component';
-import { FootnavComponent } from './footnav/footnav.component';
-import { CorenavComponent } from './corenav/corenav.component';
-import { TopjumpComponent } from './topjump/topjump.component';
-import { BottomjumpComponent } from './bottomjump/bottomjump.component';
-import { MainblurbComponent } from './mainblurb/mainblurb.component';
+import { FeednavComponent } from './unit/pagenav/feednav/feednav.component';
+import { FootnavComponent } from './unit/pagenav/footnav/footnav.component';
+import { CorenavComponent } from './unit/pagenav/corenav/corenav.component';
+import { TopjumpComponent } from './unit/pagejump/topjump/topjump.component';
+import { BottomjumpComponent } from './unit/pagejump/bottomjump/bottomjump.component';
+import { MainblurbComponent } from './section/mainblurb/mainblurb.component';
 
 // Others
 // Import ngx-twitter-timeline (Twitter Feed Widget)
