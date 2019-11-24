@@ -8,7 +8,12 @@
 		</mat-toolbar-row>
 		<mat-toolbar-row class="HornavContent">
 			<button class="HornavButton" mat-button>
-				Home
+				<a class="nav-link icons-eight home" routerLink="home">
+					<img src="https://png.icons8.com/material/35/bdc3c7/home-page.png" alt="Home">
+					<span class="navhov-text">
+						Home
+					</span>
+				</a>
 			</button>
 
 			<button class="HornavButton" mat-button [matMenuTriggerFor]="AboutPage">
@@ -16,10 +21,14 @@
 			</button>
 			<mat-menu #AboutPage="matMenu" xPosition="after">
 				<button mat-menu-item>
-					About ME
+					<a class="dropdown-item" routerLink="about/me">
+						About Me
+					</a>
 				</button>
 				<button mat-menu-item>
-					This Website
+					<a class="dropdown-item" routerLink="about/site">
+						This Site
+					</a>
 				</button>
 			</mat-menu>
 			<button class="HornavButton" mat-button [matMenuTriggerFor]="ResumePage">

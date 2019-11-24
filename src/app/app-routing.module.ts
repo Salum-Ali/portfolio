@@ -18,11 +18,31 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent
 },
-  {
-    path:  '',
-    redirectTo:  'home',
-    pathMatch:  'full'
+{
+  path:  '',
+  redirectTo:  'home',
+  pathMatch:  'full'
   },
+  {
+    path: 'about',
+    component: AboutComponent,
+    children: [
+      {
+          path: '',
+          redirectTo: 'me',
+          pathMatch: 'full'
+      },
+      {
+          path: 'me',
+          component: MeComponent
+      },
+      {
+          path: 'site',
+          component: SiteComponent
+      }
+    ]
+  },
+// ^ About ^
   {
     path: '**',
     component: NoneComponent
