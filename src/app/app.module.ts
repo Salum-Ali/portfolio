@@ -19,6 +19,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatTreeModule} from '@angular/material/tree';
 import { MatIconModule, MatButtonModule } from '@angular/material';
+import {MatTabsModule} from '@angular/material/tabs';
 
 // Seections
 import { FeednavComponent } from './unit/pagenav/feednav/feednav.component';
@@ -61,7 +62,8 @@ import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
     MatIconModule,
     MatButtonModule,
     // Specify library as an import (Twitter Feed Widget)
-    NgxTwitterTimelineModule
+    NgxTwitterTimelineModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
