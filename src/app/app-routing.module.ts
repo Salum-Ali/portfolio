@@ -12,6 +12,16 @@ import { AboutComponent } from './rout/about/about.component';
 import { SiteComponent } from './rout/about/site/site.component';
 import { MeComponent } from './rout/about/me/me.component';
 
+// CV
+import { ResumeComponent } from './rout/resume/resume.component';
+import { AnimationComponent } from './rout/resume/animation/animation.component';
+import { SculptingComponent } from './rout/resume/sculpting/sculpting.component';
+import { TexturingComponent } from './rout/resume/texturing/texturing.component';
+import { ScriptingComponent } from './rout/resume/scripting/scripting.component';
+
+import { LogoComponent } from './rout/resume/logo/logo.component';
+import { PosterComponent } from './rout/resume/poster/poster.component';
+
 
 const routes: Routes = [
   {
@@ -43,6 +53,37 @@ const routes: Routes = [
     ]
   },
 // ^ About ^
+  {
+    path: 'cv',
+    component: ResumeComponent,
+    children: [
+        {
+            path: '',
+            redirectTo: 'modeling',
+            pathMatch: 'full'
+        },
+        {
+            path: 'modeling',
+            component: SculptingComponent
+        },
+        // tempname?
+        {
+            path: 'animation',
+            component: AnimationComponent
+        },
+        {
+            path: 'art',
+            component: TexturingComponent
+        },
+        // TEST
+        {
+            path: 'coding',
+            component: ScriptingComponent
+        }
+        // tempname?
+    ]
+  },
+// ^ resumes ^
   {
     path: '**',
     component: NoneComponent

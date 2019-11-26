@@ -32,6 +32,15 @@ import { MainblurbComponent } from './section/mainblurb/mainblurb.component';
 // Others
 // Import ngx-twitter-timeline (Twitter Feed Widget)
 import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
+import { CvComponent } from './rout/cv/cv.component';
+import { AnimationComponent } from './rout/resume/animation/animation.component';
+import { SculptingComponent } from './rout/resume/sculpting/sculpting.component';
+import { TexturingComponent } from './rout/resume/texturing/texturing.component';
+import { LogoComponent } from './rout/resume/logo/logo.component';
+import { PosterComponent } from './rout/resume/poster/poster.component';
+import { ResumeComponent } from './rout/resume/resume.component';
+import { CodeComponent } from './rout/resume/code/code.component';
+import { ScriptingComponent } from './rout/resume/scripting/scripting.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +56,15 @@ import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
     AboutComponent,
     SiteComponent,
     MeComponent,
+    CvComponent,
+    AnimationComponent,
+    SculptingComponent,
+    TexturingComponent,
+    LogoComponent,
+    PosterComponent,
+    ResumeComponent,
+    CodeComponent,
+    ScriptingComponent,
 
   ],
   imports: [
