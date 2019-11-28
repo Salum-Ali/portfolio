@@ -32,7 +32,6 @@ import { MainblurbComponent } from './section/mainblurb/mainblurb.component';
 // Others
 // Import ngx-twitter-timeline (Twitter Feed Widget)
 import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
-import { CvComponent } from './rout/cv/cv.component';
 import { AnimationComponent } from './rout/resume/animation/animation.component';
 import { SculptingComponent } from './rout/resume/sculpting/sculpting.component';
 import { TexturingComponent } from './rout/resume/texturing/texturing.component';
@@ -56,7 +55,6 @@ import { ScriptingComponent } from './rout/resume/scripting/scripting.component'
     AboutComponent,
     SiteComponent,
     MeComponent,
-    CvComponent,
     AnimationComponent,
     SculptingComponent,
     TexturingComponent,
