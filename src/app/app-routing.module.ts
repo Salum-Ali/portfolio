@@ -59,11 +59,11 @@ const routes: Routes = [
     children: [
         {
             path: '',
-            redirectTo: 'modeling',
+            redirectTo: 'sculpting',
             pathMatch: 'full'
         },
         {
-            path: 'modeling',
+            path: 'sculpting',
             component: SculptingComponent
         },
         // tempname?

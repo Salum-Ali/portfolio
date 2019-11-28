@@ -9,7 +9,7 @@ export class ResumeComponent implements OnInit {
 
   navLinks = [
     {
-      path: 'modeling',
+      path: 'sculpting',
       label: '3D Modeling'
     },
     {

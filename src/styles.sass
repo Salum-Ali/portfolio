@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 .MainGrid
+	@media only screen and (max-width: 1340px)
+		#FeedNav
+			display: none
+		#RouterContent
+			grid-column: 1/11
 #PageWrap
 	margin: 2em
 	// ^Is the above even needed? probably not ^
@@ -18,19 +23,24 @@
 		grid-column: 2/12
 		border: 0.5em ridge white
 		display: grid
+		max-height: 1080px
 		grid-template-columns: repeat(10, 1fr)
 		.SubItem
 			margin: 0.5em
-
 		#PageBlurb
 			grid-column: 1/11
 			border: 0.5em ridge white
 
 		#FeedNav
+			max-height: 100%
 			grid-column: 1/4
 			border: 0.5em ridge white
 		#RouterContent
+			max-height: 100%
 			grid-column: 4/11
+			border: 0.5em ridge white
+		#HorAd
+			grid-column: 1/11
 			border: 0.5em ridge white
 	#FooterWrap
 		grid-column: 3/11
