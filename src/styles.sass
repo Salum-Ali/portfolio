@@ -1,18 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 .MainGrid
-	@media only screen and (max-width: 1340px)
-		#FeedNav
-			display: none
-		#RouterContent
-			grid-column: 1/11
+
+// Above Tablet Sized
 #PageWrap
 	margin: 2em
 	// ^Is the above even needed? probably not ^
 	// height: 100vh
 	display: grid
 	grid-template-columns: repeat(12, 1fr)
-	// grid-template-rows: repeat(3, 1fr)
-	// grid-column-gap: 1em
 	grid-row-gap: 1em
 	grid-auto-rows: auto
 	.MainItem
@@ -47,7 +42,24 @@
 		// border: 0.5em ridge white
 		// ^ NTS: Above border was to proove a concept ^
 	// hr
-	.QuarterWide
-		width: 25%
-	#NavTab
-		color: white
+
+.QuarterWide
+	width: 25%
+#NavTab
+	color: white
+// Generalised Content
+
+@media only screen and (max-width: 1320px)
+	#FeedNav
+		display: none
+	#RouterContent
+		max-height: 100%
+		grid-column: 1/11 !important
+		border: 0.5em ridge white
+// ^ Mixin for Removing FeedNav on tablet-like smaller screens ^
+
+@media only screen and (max-width: 560px)
+	#HeaderWrap
+		display: none
+	#PageWrap
+		margin: 0em

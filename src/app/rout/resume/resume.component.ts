@@ -18,11 +18,15 @@ export class ResumeComponent implements OnInit {
     },
     {
       path: 'art',
-      label: 'Texturing'
+      label: '2D Arts'
     },
     {
       path: 'coding',
-      label: 'Scripting'
+      label: 'Coding'
+    },
+    {
+      path: 'personal',
+      label: 'Personal Work'
     },
   ];
 

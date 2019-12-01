@@ -11,6 +11,20 @@ import { NoneComponent } from './rout/none/none.component';
 import { AboutComponent } from './rout/about/about.component';
 import { SiteComponent } from './rout/about/site/site.component';
 import { MeComponent } from './rout/about/me/me.component';
+import { AnimationComponent } from './rout/resume/animation/animation.component';
+import { SculptingComponent } from './rout/resume/sculpting/sculpting.component';
+import { TexturingComponent } from './rout/resume/texturing/texturing.component';
+import { LogoComponent } from './rout/resume/logo/logo.component';
+import { PosterComponent } from './rout/resume/poster/poster.component';
+import { ResumeComponent } from './rout/resume/resume.component';
+import { CodeComponent } from './rout/resume/code/code.component';
+import { ScriptingComponent } from './rout/resume/scripting/scripting.component';
+import { PersonalComponent } from './rout/resume/personal/personal.component';
+
+import { ContactComponent } from './rout/contact/contact.component';
+import { SocialComponent } from './rout/contact/social/social.component';
+import { CommmissionComponent } from './rout/contact/commmission/commmission.component';
+import { ConnectComponent } from './rout/contact/connect/connect.component';
 
 // Materials
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -18,7 +32,8 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatTreeModule} from '@angular/material/tree';
-import { MatIconModule, MatButtonModule } from '@angular/material';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 import {MatTabsModule} from '@angular/material/tabs';
 
 // Seections
@@ -32,14 +47,6 @@ import { MainblurbComponent } from './section/mainblurb/mainblurb.component';
 // Others
 // Import ngx-twitter-timeline (Twitter Feed Widget)
 import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
-import { AnimationComponent } from './rout/resume/animation/animation.component';
-import { SculptingComponent } from './rout/resume/sculpting/sculpting.component';
-import { TexturingComponent } from './rout/resume/texturing/texturing.component';
-import { LogoComponent } from './rout/resume/logo/logo.component';
-import { PosterComponent } from './rout/resume/poster/poster.component';
-import { ResumeComponent } from './rout/resume/resume.component';
-import { CodeComponent } from './rout/resume/code/code.component';
-import { ScriptingComponent } from './rout/resume/scripting/scripting.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +70,11 @@ import { ScriptingComponent } from './rout/resume/scripting/scripting.component'
     ResumeComponent,
     CodeComponent,
     ScriptingComponent,
-
+    ContactComponent,
+    SocialComponent,
+    CommmissionComponent,
+    ConnectComponent,
+    PersonalComponent,
   ],
   imports: [
     BrowserModule,

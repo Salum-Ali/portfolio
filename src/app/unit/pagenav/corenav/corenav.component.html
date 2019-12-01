@@ -7,72 +7,49 @@
 			<hr class="QuarterWide">
 		</mat-toolbar-row>
 		<mat-toolbar-row class="HornavContent">
-			<button class="HornavButton" id="HomePage" mat-button>
-				<a class="nav-link icons-eight home" routerLink="home">
+
+			<a class="HornavButton" id="HomePage"  routerLink="home" mat-button>
+				<!-- <a class="nav-link icons-eight home" routerLink="home"> -->
 					<img src="https://png.icons8.com/material/35/bdc3c7/home-page.png" alt="Home">
 					<span class="navhov-text">
 						Home
 					</span>
-				</a>
-			</button>
+				<!-- </a> -->
+			</a>
 
 			<button class="HornavButton" mat-button [matMenuTriggerFor]="AboutPage">
 				About
 			</button>
 			<mat-menu #AboutPage="matMenu" xPosition="after">
-				<button mat-menu-item>
-					<a class="dropdown-item" routerLink="about/me">
-						About Me
-					</a>
-				</button>
-				<button mat-menu-item>
-					<a class="dropdown-item" routerLink="about/site">
-						This Site
-					</a>
-				</button>
+				<a class="dropdown-item" routerLink="about/me" mat-menu-item>
+					<!-- <a class="dropdown-item" routerLink="about/me"> -->
+					About Me
+					<!-- </a> -->
+				</a>
+				<a class="dropdown-item" routerLink="about/site" mat-menu-item>
+					This Site
+				</a>
 			</mat-menu>
-			<!-- <button class="HornavButton" mat-button [matMenuTriggerFor]="ResumePage">
-				Resume
-			</button>
-			<mat-menu #ResumePage="matMenu" xPosition="after">
-				<button mat-menu-item>
-					Complete Resume
-				</button>
-				<button mat-menu-item>
-					Tag Search
-				</button>
-				<button mat-menu-item>
-					3D Modeling
-				</button>
-				<button mat-menu-item>
-					Animation
-				</button>
-				<button mat-menu-item>
-					2D Art
-				</button>
-			</mat-menu> -->
+
 			<button mat-button [matMenuTriggerFor]="ResumePage">CV's</button>
 
 				<mat-menu #ResumePage="matMenu">
 					<!-- <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button> -->
-					<button mat-menu-item [matMenuTriggerFor]="Modelling">
-						<a class="dropdown-item" routerLink="cv/sculpting">
-							3D Modelling
-						</a>
-					</button>
-					<button mat-menu-item [matMenuTriggerFor]="Animation">
-						<a class="dropdown-item" routerLink="cv/animation">
-							Animation
-						</a>
-					</button>
-					<button mat-menu-item [matMenuTriggerFor]="Texturing">
-							<a class="dropdown-item" routerLink="cv/art">
-								2D Art
-							</a>
-					</button>
-					<button mat-menu-item [matMenuTriggerFor]="Scripting">
-						Scripting
-					</button>
+					<a class="dropdown-item" routerLink="portfolio/sculpting" mat-menu-item [matMenuTriggerFor]="Modelling">
+						3D Modelling
+					</a>
+					<a class="dropdown-item" routerLink="portfolio/animation" mat-menu-item [matMenuTriggerFor]="Animation">
+						Animarion
+					</a>
+					<a class="dropdown-item" routerLink="portfolio/art" mat-menu-item [matMenuTriggerFor]="Texturing">
+						2D Arts
+					</a>
+					<a class="dropdown-item" routerLink="portfolio/coding" mat-menu-item [matMenuTriggerFor]="Coding">
+						Coding
+					</a>
+					<a class="dropdown-item" routerLink="portfolio/personal" mat-menu-item [matMenuTriggerFor]="Personal">
+						Personal Work
+					</a>
 				</mat-menu>
 					<mat-menu #Modelling="matMenu">
 						<button mat-menu-item>Environments</button>
@@ -91,20 +68,26 @@
 							<button mat-menu-item>Vehicles</button>
 							<button mat-menu-item>Architechture</button>
 					</mat-menu>
+					<mat-menu #Coding="matMenu">
+						<button mat-menu-item>Lorem</button>
+					</mat-menu>
+					<mat-menu #Personal="matMenu">
+						<button mat-menu-item>GGJ</button>
+					</mat-menu>
 
 			<button class="HornavButton" mat-button [matMenuTriggerFor]="ContactPage">
 				Contact
 			</button>
 			<mat-menu #ContactPage="matMenu" xPosition="after">
-				<button mat-menu-item>
-					Contact Info
-				</button>
-				<button mat-menu-item>
+				<a class="dropdown-item" routerLink="contact/me" mat-menu-item>
+					me
+				</a>
+				<a class="dropdown-item" routerLink="contact/socials" mat-menu-item>
 					Social Links
-				</button>
-				<button mat-menu-item disabled>
-					Commissions
-				</button>
+				</a>
+				<a class="dropdown-item" routerLink="contact/commissions" mat-menu-item>
+					commisions
+				</a>
 			</mat-menu>
 		</mat-toolbar-row>
 	</mat-toolbar>
