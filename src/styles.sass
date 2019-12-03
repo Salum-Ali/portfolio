@@ -8,7 +8,7 @@
 	// height: 100vh
 	display: grid
 	grid-template-columns: repeat(12, 1fr)
-	grid-row-gap: 1em
+	grid-row-gap: 0em
 	grid-auto-rows: auto
 	.MainItem
 	#HeaderWrap
@@ -22,6 +22,7 @@
 		grid-template-columns: repeat(10, 1fr)
 		.SubItem
 			margin: 0.5em
+			// ^ Keep? TBD ^
 		#PageBlurb
 			grid-column: 1/11
 			border: 0.5em ridge white
@@ -45,8 +46,8 @@
 
 .QuarterWide
 	width: 25%
-#NavTab
-	color: white
+// #NavTab
+// 	color: white
 // Generalised Content
 
 @media only screen and (max-width: 1320px)
@@ -59,7 +60,8 @@
 // ^ Mixin for Removing FeedNav on tablet-like smaller screens ^
 
 @media only screen and (max-width: 560px)
-	#HeaderWrap
-		display: none
+
+	// #HeaderWrap
+	// 	display: none
 	#PageWrap
 		margin: 0em
