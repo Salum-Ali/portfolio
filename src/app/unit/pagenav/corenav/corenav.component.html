@@ -1,20 +1,14 @@
+<h3>
+	SalumAli.ME<br>Personal Portfolio Website
+</h3>
+<hr class="QuarterWide">
+
 <nav class="HorNav">
-	<mat-toolbar>  
-		<mat-toolbar-row class="BrandContent">
-			<span>SalumAli.ME<br>Personal Portfolio Website</span>
-		</mat-toolbar-row>
-		<mat-toolbar-row class="DeviderContent">
-			<hr class="QuarterWide">
-		</mat-toolbar-row>
+	<mat-toolbar>
 		<mat-toolbar-row class="HornavContent">
 
 			<a class="HornavButton" id="HomePage"  routerLink="home" mat-button>
-				<!-- <a class="nav-link icons-eight home" routerLink="home"> -->
-					<img src="https://png.icons8.com/material/35/bdc3c7/home-page.png" alt="Home">
-					<span class="navhov-text">
-						Home
-					</span>
-				<!-- </a> -->
+				Home
 			</a>
 
 			<button class="HornavButton" mat-button [matMenuTriggerFor]="AboutPage">
@@ -27,11 +21,13 @@
 					<!-- </a> -->
 				</a>
 				<a class="dropdown-item" routerLink="about/site" mat-menu-item>
-					This Site
+					This Website
 				</a>
 			</mat-menu>
 
-			<button mat-button [matMenuTriggerFor]="ResumePage">CV's</button>
+			<button mat-button [matMenuTriggerFor]="ResumePage">
+				Projects
+			</button>
 
 				<mat-menu #ResumePage="matMenu">
 					<!-- <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button> -->
@@ -62,17 +58,31 @@
 						<button mat-menu-item>Logos</button>
 					</mat-menu>
 					<mat-menu #Texturing="matMenu">
-							<button mat-menu-item>Environments</button>
-							<button mat-menu-item>Props</button>
-							<button mat-menu-item>Logos</button>
-							<button mat-menu-item>Vehicles</button>
-							<button mat-menu-item>Architechture</button>
+							<button mat-menu-item>
+								Environments
+							</button>
+							<button mat-menu-item>
+								Props
+							</button>
+							<button mat-menu-item>
+								Logos
+							</button>
+							<button mat-menu-item>
+								Vehicles
+							</button>
+							<button mat-menu-item>
+								Architechture
+							</button>
 					</mat-menu>
 					<mat-menu #Coding="matMenu">
-						<button mat-menu-item>Lorem</button>
+						<button mat-menu-item>
+							lorem
+						</button>
 					</mat-menu>
 					<mat-menu #Personal="matMenu">
-						<button mat-menu-item>GGJ</button>
+						<button mat-menu-item>
+							Global Game Jam
+						</button>
 					</mat-menu>
 
 			<button class="HornavButton" mat-button [matMenuTriggerFor]="ContactPage">
@@ -80,13 +90,13 @@
 			</button>
 			<mat-menu #ContactPage="matMenu" xPosition="after">
 				<a class="dropdown-item" routerLink="contact/me" mat-menu-item>
-					me
+					Me
 				</a>
 				<a class="dropdown-item" routerLink="contact/socials" mat-menu-item>
 					Social Links
 				</a>
 				<a class="dropdown-item" routerLink="contact/commissions" mat-menu-item>
-					commisions
+					Commissions
 				</a>
 			</mat-menu>
 		</mat-toolbar-row>
