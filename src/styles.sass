@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 .MainGrid
-
 // Above Tablet Sized
 #PageWrap
 	margin: 2em
@@ -61,7 +60,11 @@
 
 @media only screen and (max-width: 560px)
 
-	// #HeaderWrap
-	// 	display: none
 	#PageWrap
 		margin: 0em
+		#HeaderWrap
+			hr
+				display: none
+		#BodyWrap
+			grid-column: 1/13
+			// grid-template-columns: repeat(12, 1fr)
