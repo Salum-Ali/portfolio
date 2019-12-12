@@ -39,6 +39,21 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 		font-family: Roboto, "Helvetica Neue", sans-serif;
 		background-color: #000000;
 		// text-align: center;
+		// hr
+		// {
+			.QuarterWide
+			{
+			width: 25%;
+			}
+			.HalfWide
+			{
+				width: 50%;
+			}
+		// }
+		#NavTab
+		{
+			color: white;
+		}
 		.mat-tab-header-pagination
 		{
 			background-color: white;

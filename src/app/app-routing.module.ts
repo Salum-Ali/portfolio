@@ -40,7 +40,10 @@ import { PosterComponent } from './rout/resume/poster/poster.component';
 const routes: Routes = [
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+    data: {
+      title: 'Home'
+    }
   },
   {
   path:  '',
@@ -59,11 +62,17 @@ const routes: Routes = [
       },
       {
           path: 'me',
-          component: MeComponent
+          component: MeComponent,
+          data: {
+            title: 'About - Me'
+          }
       },
       {
           path: 'site',
-          component: SiteComponent
+          component: SiteComponent,
+          data: {
+            title: 'About - the Site'
+          }
       }
     ]
   },
@@ -79,27 +88,42 @@ const routes: Routes = [
       },
       {
           path: 'sculpting',
-          component: SculptingComponent
+          component: SculptingComponent,
+          data: {
+            title: 'Projects - Modeling '
+          }
       },
       // ^ 3D Modelling & Sculpting ^
       {
           path: 'animation',
-          component: AnimationComponent
+          component: AnimationComponent,
+          data: {
+            title: 'Projects - Animation'
+          }
       },
       // ^ Animations ^
       {
           path: 'art',
-          component: TexturingComponent
+          component: TexturingComponent,
+          data: {
+            title: 'Projects - Texturing'
+          }
       },
       // ^ 2D Arts inc. Logos ^
       {
           path: 'coding',
-          component: ScriptingComponent
+          component: ScriptingComponent,
+          data: {
+            title: 'Projects - Programming'
+          }
       },
       // ^ Anything Programming Related ^
       {
         path: 'personal',
-        component: PersonalComponent
+        component: PersonalComponent,
+        data: {
+          title: 'Projects - Personal'
+        }
       }
     ]
   },
@@ -115,17 +139,26 @@ const routes: Routes = [
       },
       {
           path: 'me',
-          component: ConnectComponent
+          component: ConnectComponent,
+          data: {
+            title: 'Contact - Details'
+          }
       },
       // ^ Contact Me ^
       {
         path: 'socials',
-        component: SocialComponent
+        component: SocialComponent,
+        data: {
+          title: 'Contact - Socials'
+        }
       },
       // ^ Contact Me ^
       {
           path: 'commissions',
-          component: CommmissionComponent
+          component: CommmissionComponent,
+          data: {
+            title: 'Contact - Commissions'
+          }
       }
       // ^ Commision Registration Page ^
     ]
