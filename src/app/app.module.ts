@@ -47,6 +47,8 @@ import { MainblurbComponent } from './section/mainblurb/mainblurb.component';
 // Others
 // Import ngx-twitter-timeline (Twitter Feed Widget)
 import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
+import { BackjumpComponent } from './unit/pagejump/backjump/backjump.component';
+import { ForwardjumpComponent } from './unit/pagejump/forwardjump/forwardjump.component';
 
 @NgModule({
   declarations: [
@@ -75,6 +77,8 @@ import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
     CommmissionComponent,
     ConnectComponent,
     PersonalComponent,
+    BackjumpComponent,
+    ForwardjumpComponent,
   ],
   imports: [
     BrowserModule,
