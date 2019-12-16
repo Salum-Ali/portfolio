@@ -22,22 +22,25 @@
 //   }
 // }
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { filter, map } from 'rxjs/operators';
+import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.sass']
+    styleUrls: ['./app.component.sass'],
+    providers: [Location, {provide: LocationStrategy, useClass: PathLocationStrategy}]
 
 })
-export class AppComponent {
-  // title = 'portfolio-website';
+export class AppComponent implements OnInit {
+  title = 'Salum Ali Muhammed';
+//   public href: string = '';
 
 
-    constructor(private router: Router, private activatedRoute: ActivatedRoute, private titleService: Title) {
+    constructor(private router: Router, private activatedRoute: ActivatedRoute, private titleService: Title, private location: Location) {
         this.router.events.pipe(
             filter(event => event instanceof NavigationEnd),
             map(() => {
@@ -58,6 +61,11 @@ export class AppComponent {
                 this.titleService.setTitle(data + ' - SalumAli.ME');
             }
         });
+    }
+
+    ngOnInit() {
+        // this.href = this.router.url;
+        // console.log(this.router.url);
     }
 
 }

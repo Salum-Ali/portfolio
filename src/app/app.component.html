@@ -4,7 +4,7 @@
     <hr class="QuarterWide">
     <div id="PageTitles">
         <h3 id="SiteTitle">
-            SalumAli.ME
+            {{title}}
           </h3>
           <h2>
             Personal Portfolio Website
@@ -22,12 +22,19 @@
           <app-forwardjump></app-forwardjump>
         </p>
       </div>
-      <app-mainblurb></app-mainblurb>
+      <div id="BlurbSection">
+        <app-mainblurb></app-mainblurb>
+      </div>
     </div>
     <aside class="SubItem" id="FeedNav">
       <app-feednav></app-feednav>
     </aside>
     <main class="SubItem" id="RouterContent">
+      <div id="CurrentRout">
+        <p>
+          Your Current Page: {{location.path()}}
+        </p>
+      </div>
       <router-outlet></router-outlet>
     </main>
     <div  class="SubItem" id="HorAd">

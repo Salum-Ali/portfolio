@@ -58,5 +58,15 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 		{
 			background-color: white;
 		}
+		.mat-tab-link-container
+		{
+			padding: 0.5em;
+			border: 1px solid white;
+		}
+		p
+		{
+			padding: 1em;
+			text-align: left;
+		}
 	}
 }
