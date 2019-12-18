@@ -1,3 +1,5 @@
+import { AdsenseModule } from 'ng2-adsense';
+
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -49,6 +51,9 @@ import { MainblurbComponent } from './section/mainblurb/mainblurb.component';
 import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
 import { BackjumpComponent } from './unit/pagejump/backjump/backjump.component';
 import { ForwardjumpComponent } from './unit/pagejump/forwardjump/forwardjump.component';
+import { AdspaceComponent } from './section/adspace/adspace.component';
+import { AdverticalComponent } from './section/adspace/advertical/advertical.component';
+import { AdhorizontalComponent } from './section/adspace/adhorizontal/adhorizontal.component';
 
 @NgModule({
   declarations: [
@@ -79,8 +84,12 @@ import { ForwardjumpComponent } from './unit/pagejump/forwardjump/forwardjump.co
     PersonalComponent,
     BackjumpComponent,
     ForwardjumpComponent,
+    AdspaceComponent,
+    AdverticalComponent,
+    AdhorizontalComponent,
   ],
   imports: [
+    AdsenseModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

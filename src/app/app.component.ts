@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
 //   public href: string = '';
 
 
-    constructor(private router: Router, private activatedRoute: ActivatedRoute, private titleService: Title, private location: Location) {
+    constructor(private router: Router, private activatedRoute: ActivatedRoute, private titleService: Title, public location: Location) {
         this.router.events.pipe(
             filter(event => event instanceof NavigationEnd),
             map(() => {
@@ -66,6 +66,7 @@ export class AppComponent implements OnInit {
     ngOnInit() {
         // this.href = this.router.url;
         // console.log(this.router.url);
+        console.log(this.location.path());
     }
 
 }
