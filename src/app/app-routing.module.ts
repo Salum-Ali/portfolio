@@ -78,7 +78,7 @@ const routes: Routes = [
   },
   // ^ About ^
   {
-    path: 'portfolio',
+    path: 'projects',
     component: ResumeComponent,
     children: [
       {

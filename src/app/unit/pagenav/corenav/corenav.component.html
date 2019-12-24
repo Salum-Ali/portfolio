@@ -4,10 +4,12 @@
 		<mat-toolbar-row class="HornavContent">
 
 			<a class="HornavButton" id="HomePage"  routerLink="home" mat-button>
+				<img src="https://img.icons8.com/material-two-tone/24/000000/home-page.png">
 				Home
 			</a>
 
 			<button class="HornavButton" mat-button [matMenuTriggerFor]="AboutPage">
+				<img src="https://img.icons8.com/material-two-tone/24/000000/about.png">
 				About
 			</button>
 			<mat-menu #AboutPage="matMenu" xPosition="after">
@@ -22,24 +24,25 @@
 			</mat-menu>
 
 			<button mat-button [matMenuTriggerFor]="ResumePage">
+				<img src="https://img.icons8.com/material-two-tone/24/000000/group-of-projects.png">
 				Projects
 			</button>
 
 				<mat-menu #ResumePage="matMenu">
 					<!-- <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button> -->
-					<a class="dropdown-item" routerLink="portfolio/sculpting" mat-menu-item [matMenuTriggerFor]="Modelling">
+					<a class="dropdown-item" routerLink="projects/sculpting" mat-menu-item [matMenuTriggerFor]="Modelling">
 						3D Modelling
 					</a>
-					<a class="dropdown-item" routerLink="portfolio/animation" mat-menu-item [matMenuTriggerFor]="Animation">
+					<a class="dropdown-item" routerLink="projects/animation" mat-menu-item [matMenuTriggerFor]="Animation">
 						Animarion
 					</a>
-					<a class="dropdown-item" routerLink="portfolio/art" mat-menu-item [matMenuTriggerFor]="Texturing">
+					<a class="dropdown-item" routerLink="projects/art" mat-menu-item [matMenuTriggerFor]="Texturing">
 						2D Arts
 					</a>
-					<a class="dropdown-item" routerLink="portfolio/coding" mat-menu-item [matMenuTriggerFor]="Coding">
+					<a class="dropdown-item" routerLink="projects/coding" mat-menu-item [matMenuTriggerFor]="Coding">
 						Coding
 					</a>
-					<a class="dropdown-item" routerLink="portfolio/personal" mat-menu-item [matMenuTriggerFor]="Personal">
+					<a class="dropdown-item" routerLink="projects/personal" mat-menu-item [matMenuTriggerFor]="Personal">
 						Personal Work
 					</a>
 				</mat-menu>
@@ -82,6 +85,7 @@
 					</mat-menu>
 
 			<button class="HornavButton" mat-button [matMenuTriggerFor]="ContactPage">
+				<img src="https://img.icons8.com/material-two-tone/24/000000/add-contact-to-company.png">
 				Contact
 			</button>
 			<mat-menu #ContactPage="matMenu" xPosition="after">

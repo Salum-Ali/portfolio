@@ -35,9 +35,20 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 	color: white;
 	body
 	{
-		text-align: center;
-		font-family: Roboto, "Helvetica Neue", sans-serif;
 		background-color: #000000;
+		margin: 0px;
+		// The image used
+		background-image: url("./assets/IMG/untitled.png	");
+		// Full height
+		// height: 100%
+		// Center and scale the image nicely
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+  background-attachment: fixed;
+		// font-family: Roboto, "Helvetica Neue", sans-serif;
+		font-family: 'Exo 2', sans-serif;
 		// text-align: center;
 		// hr
 		// {
@@ -63,10 +74,21 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 			padding: 0.5em;
 			border: 1px solid white;
 		}
+		span.SignatureMotto
+		{
+			display: block;
+			text-align: center;
+			// ^ Probaably not the 100% correct way of doing things, but it works, so I guess it's fine ^
+		}
 		p
 		{
 			padding: 1em;
 			text-align: left;
+		}
+		h1, h2, h3, h4, h5, h6
+		{
+			font-family: 'Cinzel Decorative', cursive;
+			font-weight: 400;
 		}
 	}
 }
