@@ -9,10 +9,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Pages
 import { HomeComponent } from './rout/home/home.component';
+
 import { NoneComponent } from './rout/none/none.component';
+
 import { AboutComponent } from './rout/about/about.component';
 import { SiteComponent } from './rout/about/site/site.component';
 import { MeComponent } from './rout/about/me/me.component';
+
 import { AnimationComponent } from './rout/resume/animation/animation.component';
 import { SculptingComponent } from './rout/resume/sculpting/sculpting.component';
 import { TexturingComponent } from './rout/resume/texturing/texturing.component';
@@ -27,6 +30,9 @@ import { ContactComponent } from './rout/contact/contact.component';
 import { SocialComponent } from './rout/contact/social/social.component';
 import { CommmissionComponent } from './rout/contact/commmission/commmission.component';
 import { ConnectComponent } from './rout/contact/connect/connect.component';
+
+import { QuestionComponent } from './rout/question/question.component';
+
 
 // Materials
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -87,6 +93,7 @@ import { AdhorizontalComponent } from './section/adspace/adhorizontal/adhorizont
     AdspaceComponent,
     AdverticalComponent,
     AdhorizontalComponent,
+    QuestionComponent,
   ],
   imports: [
     AdsenseModule.forRoot(),

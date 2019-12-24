@@ -32,6 +32,9 @@ import { SocialComponent } from './rout/contact/social/social.component';
 import { CommmissionComponent } from './rout/contact/commmission/commmission.component';
 import { ConnectComponent } from './rout/contact/connect/connect.component';
 
+// FAQ
+import { QuestionComponent } from './rout/question/question.component';
+
 // Ignore For Now
 import { LogoComponent } from './rout/resume/logo/logo.component';
 import { PosterComponent } from './rout/resume/poster/poster.component';
@@ -152,7 +155,7 @@ const routes: Routes = [
           title: 'Contact - Socials'
         }
       },
-      // ^ Contact Me ^
+      // ^ Social Media Link List ^
       {
           path: 'commissions',
           component: CommmissionComponent,
@@ -162,6 +165,13 @@ const routes: Routes = [
       }
       // ^ Commision Registration Page ^
     ]
+  },
+  {
+    path: 'faq',
+    component: QuestionComponent,
+    data: {
+      title: 'Q & A'
+    }
   },
   {
     path: '**',

@@ -71,4 +71,5 @@ export class AppComponent implements OnInit {
 
 }
 
-// ^ CREDIT: @Ankur's answer on SrackOverFlow => https://stackoverflow.com/questions/47900447/how-to-change-page-title-with-routing-in-angular-application ^
+// ^ CREDIT: @Ankur's answer on SrackOverFlow
+// => https://stackoverflow.com/questions/47900447/how-to-change-page-title-with-routing-in-angular-application ^
