@@ -174,8 +174,16 @@ const routes: Routes = [
     }
   },
   {
-    path: '**',
-    component: NoneComponent
+    path:  '**',
+    redirectTo:  '404',
+    pathMatch:  'full'
+  },
+  {
+    path: '404',
+    component: NoneComponent,
+    data: {
+      title: '404 - Page Not Found'
+    }
   }
   // ^ 404 ^
 ];
