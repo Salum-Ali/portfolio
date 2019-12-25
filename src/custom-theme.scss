@@ -39,7 +39,7 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 		background-color: #000000;
 		margin: 0px;
 		// The image used
-		background-image: url("./assets/IMG/untitled.png	");
+		background-image: url("./assets/site/IMG/HERO.png");
 		// Full height
 		// height: 100%
 		// Center and scale the image nicely
@@ -47,21 +47,16 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 		background-repeat: no-repeat;
 		background-size: cover;
 		text-align: center;
-  background-attachment: fixed;
-		// font-family: Roboto, "Helvetica Neue", sans-serif;
+		background-attachment: fixed;
 		font-family: 'Exo 2', sans-serif;
-		// text-align: center;
-		// hr
-		// {
-			.QuarterWide
-			{
-			width: 25%;
-			}
-			.HalfWide
-			{
-				width: 50%;
-			}
-		// }
+		hr.QuarterWide
+		{
+		width: 25%;
+		}
+		hr.HalfWide
+		{
+			width: 50%;
+		}
 		#NavTab
 		{
 			color: white;
