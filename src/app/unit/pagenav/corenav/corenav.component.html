@@ -23,14 +23,16 @@
 				</a>
 			</mat-menu>
 
-			<button mat-button [matMenuTriggerFor]="ResumePage">
+			<button mat-button [matMenuTriggerFor]="ProjectPage">
 				<img src="https://img.icons8.com/material-two-tone/24/000000/group-of-projects.png">
 				Projects
 			</button>
-
-				<mat-menu #ResumePage="matMenu">
+				<mat-menu #ProjectPage="matMenu">
 					<!-- <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button> -->
-					<a class="dropdown-item" routerLink="projects/sculpting" mat-menu-item [matMenuTriggerFor]="Modelling">
+					<button class="dropdown-item" mat-menu-item [matMenuTriggerFor]="Professional">
+						Professional Works
+					</button>
+					<!-- <a class="dropdown-item" routerLink="projects/sculpting" mat-menu-item [matMenuTriggerFor]="Modelling">
 						3D Modelling
 					</a>
 					<a class="dropdown-item" routerLink="projects/animation" mat-menu-item [matMenuTriggerFor]="Animation">
@@ -41,46 +43,32 @@
 					</a>
 					<a class="dropdown-item" routerLink="projects/coding" mat-menu-item [matMenuTriggerFor]="Coding">
 						Coding
-					</a>
-					<a class="dropdown-item" routerLink="projects/personal" mat-menu-item [matMenuTriggerFor]="Personal">
-						Personal Work
-					</a>
+					</a> -->
+					<button class="dropdown-item" routerLink="projects/personal" mat-menu-item [matMenuTriggerFor]="Personal">
+						Personal Bests
+					</button>
 				</mat-menu>
-					<mat-menu #Modelling="matMenu">
-						<button mat-menu-item>Environments</button>
-						<button mat-menu-item>Props</button>
-						<button mat-menu-item>Logos</button>
-						<button mat-menu-item>Vehicles</button>
-						<button mat-menu-item>Architechture</button>
-					</mat-menu>
-					<mat-menu #Animation="matMenu">
-						<button mat-menu-item>Logos</button>
-					</mat-menu>
-					<mat-menu #Texturing="matMenu">
-							<button mat-menu-item>
-								Environments
-							</button>
-							<button mat-menu-item>
-								Props
-							</button>
-							<button mat-menu-item>
-								Logos
-							</button>
-							<button mat-menu-item>
-								Vehicles
-							</button>
-							<button mat-menu-item>
-								Architechture
-							</button>
-					</mat-menu>
-					<mat-menu #Coding="matMenu">
-						<button mat-menu-item>
-							lorem
+					<mat-menu #Professional="matMenu">
+						<button mat-menu-item [routerLink]="['projects/profesional/']" fragment="Scripting">
+							Modelling &amp; Sculpting
 						</button>
+						<button mat-menu-item>Animation</button>
+						<button mat-menu-item>2D Art &amp; Animation</button>
+						<button mat-menu-item>Coding</button>
+						<button mat-menu-item>Game Dev</button>
 					</mat-menu>
 					<mat-menu #Personal="matMenu">
+						<button mat-menu-item routerLink="projects/profesional">
+							Education/Tutorial Projects
+						</button>
 						<button mat-menu-item>
 							Global Game Jam
+						</button>
+						<button mat-menu-item>
+							Environment Eight
+						</button>
+						<button mat-menu-item>
+							Fourty-Art-Hour Weekends
 						</button>
 					</mat-menu>
 
@@ -101,7 +89,7 @@
 			</mat-menu>
 			<a class="HornavButton" id="FAQ"  routerLink="faq" mat-button>
 				<img src="https://img.icons8.com/material-two-tone/24/000000/faq.png">
-				Q &amp; A
+				FAQ / Q &amp; A
 			</a>
 			<a class="HornavButton" id="FAQ"  routerLink="faq" mat-button>
 				<img src="https://img.icons8.com/material-two-tone/24/000000/feedback.png">

@@ -14,16 +14,18 @@ import { MeComponent } from './rout/about/me/me.component';
 
 // CV
 import { ResumeComponent } from './rout/resume/resume.component';
-// 3D Work
-import { ScriptingComponent } from './rout/resume/scripting/scripting.component';
-// Animation
-import { AnimationComponent } from './rout/resume/animation/animation.component';
-// Texturing
-import { TexturingComponent } from './rout/resume/texturing/texturing.component';
-// Scripting
-import { SculptingComponent } from './rout/resume/sculpting/sculpting.component';
 // Personal Portfolio
 import { PersonalComponent } from './rout/resume/personal/personal.component';
+// Professional Portfolio
+import { ProfessionalComponent } from './rout/resume/professional/professional.component';
+// 3D Work
+import { ScriptingComponent } from './rout/resume/professional/scripting/scripting.component';
+// Animation
+import { AnimationComponent } from './rout/resume/professional/animation/animation.component';
+// Texturing
+import { TexturingComponent } from './rout/resume/professional/texturing/texturing.component';
+// Scripting
+import { ModelingComponent } from './rout/resume/professional/modeling/modeling.component';
 
 
 // Contact
@@ -86,41 +88,56 @@ const routes: Routes = [
     children: [
       {
           path: '',
-          redirectTo: 'sculpting',
+          redirectTo: 'professional',
           pathMatch: 'full'
       },
       {
-          path: 'sculpting',
-          component: SculptingComponent,
-          data: {
-            title: 'Projects - Modeling '
-          }
+        path: 'profesional',
+        component: ProfessionalComponent,
+        // data: {
+        //   title: 'Projects - Personal'
+        // }
+        children: [
+          // {
+          //   path: '',
+          //   redirectTo: 'sculpting',
+          //   pathMatch: 'full'
+          // },
+          {
+            path: 'sculpting',
+            component: ModelingComponent,
+            data: {
+              title: 'Projects - Modeling '
+            }
+          },
+          // ^ 3D Modelling & Sculpting ^
+          {
+            path: 'animation',
+            component: AnimationComponent,
+            data: {
+              title: 'Projects - Animation'
+            }
+          },
+          // ^ Animations ^
+          {
+            path: 'art',
+            component: TexturingComponent,
+            data: {
+              title: 'Projects - Texturing'
+            }
+          },
+          // ^ 2D Arts inc. Logos ^
+          {
+            path: 'coding',
+            component: ScriptingComponent,
+            data: {
+              title: 'Projects - Programming'
+            }
+          },
+          // ^ Anything Programming Related ^
+        ]
       },
-      // ^ 3D Modelling & Sculpting ^
-      {
-          path: 'animation',
-          component: AnimationComponent,
-          data: {
-            title: 'Projects - Animation'
-          }
-      },
-      // ^ Animations ^
-      {
-          path: 'art',
-          component: TexturingComponent,
-          data: {
-            title: 'Projects - Texturing'
-          }
-      },
-      // ^ 2D Arts inc. Logos ^
-      {
-          path: 'coding',
-          component: ScriptingComponent,
-          data: {
-            title: 'Projects - Programming'
-          }
-      },
-      // ^ Anything Programming Related ^
+      // ^ Personal Works ^
       {
         path: 'personal',
         component: PersonalComponent,
@@ -128,6 +145,7 @@ const routes: Routes = [
           title: 'Projects - Personal'
         }
       }
+
     ]
   },
   // ^ CV's ^
