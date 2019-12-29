@@ -37,6 +37,9 @@ import { ConnectComponent } from './rout/contact/connect/connect.component';
 // FAQ
 import { QuestionComponent } from './rout/question/question.component';
 
+// FeedBack
+import { CommentComponent } from './rout/comment/comment.component';
+
 // Ignore For Now
 import { LogoComponent } from './rout/resume/logo/logo.component';
 import { PosterComponent } from './rout/resume/poster/poster.component';
@@ -44,16 +47,16 @@ import { PosterComponent } from './rout/resume/poster/poster.component';
 
 const routes: Routes = [
   {
+  path:  '',
+  redirectTo:  'home',
+  pathMatch:  'full'
+  },
+  {
     path: 'home',
     component: HomeComponent,
     data: {
       title: 'Home'
     }
-  },
-  {
-  path:  '',
-  redirectTo:  'home',
-  pathMatch:  'full'
   },
   // ^ HomePage Stuff ^
   {
@@ -137,7 +140,7 @@ const routes: Routes = [
           // ^ Anything Programming Related ^
         ]
       },
-      // ^ Personal Works ^
+      // ^ Professional Works ^
       {
         path: 'personal',
         component: PersonalComponent,
@@ -145,7 +148,7 @@ const routes: Routes = [
           title: 'Projects - Personal'
         }
       }
-
+      // Personal Bests
     ]
   },
   // ^ CV's ^
@@ -189,6 +192,13 @@ const routes: Routes = [
     component: QuestionComponent,
     data: {
       title: 'Q & A'
+    }
+  },
+  {
+    path: 'feedback',
+    component: CommentComponent,
+    data: {
+      title: 'Feedback / Queries'
     }
   },
   {

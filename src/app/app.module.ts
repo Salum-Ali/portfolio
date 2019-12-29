@@ -35,6 +35,8 @@ import { ConnectComponent } from './rout/contact/connect/connect.component';
 
 import { QuestionComponent } from './rout/question/question.component';
 
+import { CommentComponent } from './rout/comment/comment.component';
+
 // Seections
 import { FeednavComponent } from './unit/pagenav/feednav/feednav.component';
 import { FootnavComponent } from './unit/pagenav/footnav/footnav.component';
@@ -97,6 +99,7 @@ import { AdhorizontalComponent } from './section/adspace/adhorizontal/adhorizont
     QuestionComponent,
     ProfessionalComponent,
     ModelingComponent,
+    CommentComponent,
   ],
   imports: [
     AdsenseModule.forRoot(),

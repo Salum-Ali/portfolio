@@ -3,52 +3,40 @@
 	<mat-toolbar>
 		<mat-toolbar-row class="HornavContent">
 
-			<a class="HornavButton" id="HomePage"  routerLink="home" mat-button>
+			<button mat-button class="HornavButton" id="HomePage"  routerLink="home" mat-button>
 				<img src="https://img.icons8.com/material-two-tone/24/000000/home-page.png">
 				Home
-			</a>
+			</button>
 
 			<button class="HornavButton" mat-button [matMenuTriggerFor]="AboutPage">
 				<img src="https://img.icons8.com/material-two-tone/24/000000/about.png">
 				About
 			</button>
 			<mat-menu #AboutPage="matMenu" xPosition="after">
-				<a class="dropdown-item" routerLink="about/me" mat-menu-item>
+				<button class="dropdown-item" routerLink="about/me" mat-menu-item>
 					<!-- <a class="dropdown-item" routerLink="about/me"> -->
 					About Me
 					<!-- </a> -->
-				</a>
+				</button>
 				<a class="dropdown-item" routerLink="about/site" mat-menu-item>
 					This Website
 				</a>
 			</mat-menu>
 
-			<button mat-button [matMenuTriggerFor]="ProjectPage">
+			<button class="HornavButton" mat-button [matMenuTriggerFor]="ProjectPage">
 				<img src="https://img.icons8.com/material-two-tone/24/000000/group-of-projects.png">
 				Projects
 			</button>
 				<mat-menu #ProjectPage="matMenu">
 					<!-- <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button> -->
-					<button class="dropdown-item" mat-menu-item [matMenuTriggerFor]="Professional">
+					<button class="dropdown-item" mat-menu-item routerLink="projects/profesional">
 						Professional Works
 					</button>
-					<!-- <a class="dropdown-item" routerLink="projects/sculpting" mat-menu-item [matMenuTriggerFor]="Modelling">
-						3D Modelling
-					</a>
-					<a class="dropdown-item" routerLink="projects/animation" mat-menu-item [matMenuTriggerFor]="Animation">
-						Animarion
-					</a>
-					<a class="dropdown-item" routerLink="projects/art" mat-menu-item [matMenuTriggerFor]="Texturing">
-						2D Arts
-					</a>
-					<a class="dropdown-item" routerLink="projects/coding" mat-menu-item [matMenuTriggerFor]="Coding">
-						Coding
-					</a> -->
-					<button class="dropdown-item" routerLink="projects/personal" mat-menu-item [matMenuTriggerFor]="Personal">
+					<button class="dropdown-item" routerLink="projects/personal" mat-menu-item>
 						Personal Bests
 					</button>
 				</mat-menu>
-					<mat-menu #Professional="matMenu">
+					<!-- <mat-menu #Professional="matMenu">
 						<button mat-menu-item [routerLink]="['projects/profesional/']" fragment="Scripting">
 							Modelling &amp; Sculpting
 						</button>
@@ -70,19 +58,19 @@
 						<button mat-menu-item>
 							Fourty-Art-Hour Weekends
 						</button>
-					</mat-menu>
-
+					</mat-menu> -->
+					<!-- ^ Should this be Popup Sections of a mosaic instead? ^ -->
 			<button class="HornavButton" mat-button [matMenuTriggerFor]="ContactPage">
 				<img src="https://img.icons8.com/material-two-tone/24/000000/add-contact-to-company.png">
 				Contact
 			</button>
 			<mat-menu #ContactPage="matMenu" xPosition="after">
 				<a class="dropdown-item" routerLink="contact/me" mat-menu-item>
-					Queries
+					Me
 				</a>
-				<a class="dropdown-item" routerLink="contact/socials" mat-menu-item>
+				<!-- <a class="dropdown-item" routerLink="contact/socials" mat-menu-item>
 					Social Links
-				</a>
+				</a> -->
 				<a class="dropdown-item" routerLink="contact/commissions" mat-menu-item>
 					Commissions
 				</a>
@@ -91,7 +79,7 @@
 				<img src="https://img.icons8.com/material-two-tone/24/000000/faq.png">
 				FAQ / Q &amp; A
 			</a>
-			<a class="HornavButton" id="FAQ"  routerLink="faq" mat-button>
+			<a class="HornavButton" id="FAQ"  routerLink="feedback" mat-button>
 				<img src="https://img.icons8.com/material-two-tone/24/000000/feedback.png">
 				Feedback
 			</a>
