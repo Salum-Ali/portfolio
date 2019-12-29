@@ -84,6 +84,8 @@ THE SOFTWARE.
 
 @angular/material/button
 
+@angular/material/grid-list
+
 @angular/material/menu
 
 @angular/material/tabs
