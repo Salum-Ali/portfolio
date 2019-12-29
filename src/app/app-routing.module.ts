@@ -101,13 +101,8 @@ const routes: Routes = [
         //   title: 'Projects - Personal'
         // }
         children: [
-          // {
-          //   path: '',
-          //   redirectTo: 'sculpting',
-          //   pathMatch: 'full'
-          // },
           {
-            path: 'sculpting',
+            path: 'modeling',
             component: ModelingComponent,
             data: {
               title: 'Projects - Modeling '

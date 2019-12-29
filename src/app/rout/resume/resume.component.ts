@@ -8,25 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class ResumeComponent implements OnInit {
 
   navLinks = [
-    // {
-    //   path: 'sculpting',
-    //   label: '3D Modeling'
-    // },
-    // {
-    //   path: 'animation',
-    //   label: 'Animation'
-    // },
-    // {
-    //   path: 'art',
-    //   label: '2D Arts'
-    // },
-    // {
-    //   path: 'coding',
-    //   label: 'Coding'
-    // },
     {
       path: 'profesional',
-      label: 'profesional Works'
+      label: 'Profesional Works'
     },
     {
       path: 'personal',

@@ -1,15 +1,29 @@
+<h3>
+	3D Modelling / Sculpting
+</h3>
+<p>
+	<app-modeling></app-modeling>
+</p>
+
+<h3>
+
+</h3>
+
 <ul>
-		Sections
-		<li id="Modelling">
-			<app-sculpting></app-sculpting>
-		</li>
-		<li id="Animation">
-			<app-animation></app-animation>
-		</li>
-		<li id="Texturing">
-			<app-texturing></app-texturing>
-		</li>
-		<li id="Scripting">
-			<app-scripting></app-scripting>
-		</li>
-	</ul>
+	<li id="Modelling">
+		<router-outlet name="modeling"></router-outlet>
+	</li>
+	<!-- <li id="Animation">
+		Animation
+		<app-animation></app-animation>
+	</li> -->
+	<!-- ^ To Be Considered ^ -->
+	<li id="Texturing">
+		2D Art &amp; Texturing
+		<app-texturing></app-texturing>
+	</li>
+	<li id="Scripting">
+		Scripting / Coding / Programming
+		<app-scripting></app-scripting>
+	</li>
+</ul>

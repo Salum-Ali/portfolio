@@ -54,6 +54,7 @@ import {MatTreeModule} from '@angular/material/tree';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 // Others
 // Import ngx-twitter-timeline (Twitter Feed Widget)
@@ -116,7 +117,8 @@ import { AdhorizontalComponent } from './section/adspace/adhorizontal/adhorizont
     MatButtonModule,
     // Specify library as an import (Twitter Feed Widget)
     NgxTwitterTimelineModule,
-    MatTabsModule
+    MatTabsModule,
+    MatGridListModule
   ],
   providers: [
     Title
