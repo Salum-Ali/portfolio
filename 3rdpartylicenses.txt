@@ -86,11 +86,7 @@ THE SOFTWARE.
 
 @angular/material/grid-list
 
-@angular/material/menu
-
 @angular/material/tabs
-
-@angular/material/toolbar
 
 @angular/platform-browser
 MIT
