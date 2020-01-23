@@ -20,20 +20,16 @@ import { ProfessionalComponent } from './rout/resume/professional/professional.c
 import { ModelingComponent } from './rout/resume/professional/modeling/modeling.component';
 import { PersonalComponent } from './rout/resume/personal/personal.component';
 import { AnimationComponent } from './rout/resume/professional/animation/animation.component';
-import { SculptingComponent } from './rout/resume/professional/sculpting/sculpting.component';
 import { TexturingComponent } from './rout/resume/professional/texturing/texturing.component';
-import { LogoComponent } from './rout/resume/logo/logo.component';
 import { PosterComponent } from './rout/resume/poster/poster.component';
 import { ResumeComponent } from './rout/resume/resume.component';
-import { CodeComponent } from './rout/resume/code/code.component';
 import { ScriptingComponent } from './rout/resume/professional/scripting/scripting.component';
 
 import { ContactComponent } from './rout/contact/contact.component';
-import { SocialComponent } from './rout/contact/social/social.component';
 import { CommmissionComponent } from './rout/contact/commmission/commmission.component';
 import { ConnectComponent } from './rout/contact/connect/connect.component';
 
-import { QuestionComponent } from './rout/question/question.component';
+import { QuestionComponent } from './rout/contact/question/question.component';
 
 import { CommentComponent } from './rout/comment/comment.component';
 
@@ -64,6 +60,16 @@ import { ForwardjumpComponent } from './unit/pagejump/forwardjump/forwardjump.co
 import { AdspaceComponent } from './section/adspace/adspace.component';
 import { AdverticalComponent } from './section/adspace/advertical/advertical.component';
 import { AdhorizontalComponent } from './section/adspace/adhorizontal/adhorizontal.component';
+// import { FlexLayoutModule } from '@angular/flex-layout';
+
+import { StudyComponent } from './rout/resume/personal/study/study.component';
+import { JamComponent } from './rout/resume/personal/jam/jam.component';
+import { HindsightComponent } from './rout/resume/personal/hindsight/hindsight.component';
+import { E8Component } from './rout/resume/personal/e8/e8.component';
+import { FortComponent } from './rout/resume/personal/fort/fort.component';
+import { SkillzComponent } from './rout/about/skillz/skillz.component';
+import { CreditComponent } from './unit/pagenav/footnav/credit/credit.component';
+import { MottoComponent } from './unit/pagenav/footnav/motto/motto.component';
 
 @NgModule({
   declarations: [
@@ -80,15 +86,11 @@ import { AdhorizontalComponent } from './section/adspace/adhorizontal/adhorizont
     SiteComponent,
     MeComponent,
     AnimationComponent,
-    SculptingComponent,
     TexturingComponent,
-    LogoComponent,
     PosterComponent,
     ResumeComponent,
-    CodeComponent,
     ScriptingComponent,
     ContactComponent,
-    SocialComponent,
     CommmissionComponent,
     ConnectComponent,
     PersonalComponent,
@@ -101,6 +103,14 @@ import { AdhorizontalComponent } from './section/adspace/adhorizontal/adhorizont
     ProfessionalComponent,
     ModelingComponent,
     CommentComponent,
+    StudyComponent,
+    JamComponent,
+    HindsightComponent,
+    E8Component,
+    FortComponent,
+    SkillzComponent,
+    CreditComponent,
+    MottoComponent,
   ],
   imports: [
     AdsenseModule.forRoot(),
@@ -118,7 +128,8 @@ import { AdhorizontalComponent } from './section/adspace/adhorizontal/adhorizont
     // Specify library as an import (Twitter Feed Widget)
     NgxTwitterTimelineModule,
     MatTabsModule,
-    MatGridListModule
+    MatGridListModule,
+    // FlexLayoutModule
   ],
   providers: [
     Title

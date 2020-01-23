@@ -36,7 +36,7 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
 
 })
 export class AppComponent implements OnInit {
-  title = 'Salum Ali Muhammed';
+  title = 'Salum Ali Muhammed - Creative Semi-Intermediate';
 //   public href: string = '';
 
 
@@ -71,5 +71,5 @@ export class AppComponent implements OnInit {
 
 }
 
-// ^ CREDIT: @Ankur's answer on SrackOverFlow
+// ^ CREDIT: mainly @Ankur's answer on SrackOverFlow
 // => https://stackoverflow.com/questions/47900447/how-to-change-page-title-with-routing-in-angular-application ^

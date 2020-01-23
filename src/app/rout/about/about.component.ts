@@ -13,8 +13,12 @@ export class AboutComponent implements OnInit {
       label: 'Me'
     },
     {
+      path: 'skillz',
+      label: 'Skills & Experiences'
+    },
+    {
       path: 'site',
-      label: 'Site'
+      label: 'the Site'
     }
   ];
 

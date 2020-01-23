@@ -7,17 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
-  navLinks = [
-    {
-      path: 'profesional',
-      label: 'Profesional Works'
-    },
-    {
-      path: 'personal',
-      label: 'Personal Bests'
-    },
-  ];
-
   constructor() { }
 
   ngOnInit() {

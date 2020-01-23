@@ -13,12 +13,12 @@ export class ContactComponent implements OnInit {
       label: 'Contact Me'
     },
     // {
-    //   path: 'socials',
-    //   label: 'Social Medias'
+    //   path: 'questions',
+    //   label: 'FAQ'
     // },
     {
-      path: 'commissions',
-      label: 'Commission Me!'
+      path: 'comments',
+      label: 'Feedback'
     },
   ];
 

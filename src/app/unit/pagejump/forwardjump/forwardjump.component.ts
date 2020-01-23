@@ -11,7 +11,7 @@ export class ForwardjumpComponent implements OnInit {
 
   constructor(private location: Location) { }
 
-  @Input() color: string;
+  // @Input() color: string;
 
   ngOnInit() {
   }

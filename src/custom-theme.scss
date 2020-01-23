@@ -38,6 +38,7 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 	{
 		background-color: #000000;
 		margin: 0px;
+		padding: 0px;
 		// The image used
 		background-image: url("./assets/IMG/HeroC.png");
 		// Full height
@@ -49,13 +50,9 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 		text-align: center;
 		background-attachment: fixed;
 		font-family: 'Exo 2', sans-serif;
-		hr.QuarterWide
+		.HorNav
 		{
-		width: 25%;
-		}
-		hr.HalfWide
-		{
-			width: 50%;
+			margin: 0.5em auto;
 		}
 		#NavTab
 		{
@@ -69,23 +66,67 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 		{
 			// padding: 0.5em 0em 0.5em 0em;
 			border: 1px solid white;
+			.mat-tab-link
+			{
+				// background-color: grey;
+				color: white;
+				margin: 0.25em;
+				&:hover, &.mat-tab-label-active
+				{
+					background-color: grey;
+				}
+			}
 		}
-		span.SignatureMotto
+		.mat-tab-nav-bar.mat-primary .mat-ink-bar
 		{
-			display: block;
-			text-align: center;
-			// ^ Probaably not the 100% correct way of doing things, but it works, so I guess it's fine ^
+			margin-bottom: 0.125em;
+		}
+		h1, h2, h3, h4, h5, h6
+		{
+			margin: 0.5em;
+			font-family: 'Cinzel Decorative', cursive;
+			font-weight: 400;
 		}
 		p
 		{
 			font-size: large;
 			padding: 1em;
 			text-align: left;
+			&.LetterBody
+			{
+				font-family: 'Cinzel', serif;
+			}
 		}
-		h1, h2, h3, h4, h5, h6
+		ul
 		{
-			font-family: 'Cinzel Decorative', cursive;
-			font-weight: 400;
+			text-align: left;
+		}
+		a
+		{
+			color: yellow;
+		}
+		span
+		&.SignatureMotto
+		{
+			display: block;
+			text-align: center;
+			// ^ Probaably not the 100% correct way of doing things, but it works, so I guess it's fine ^
+		}
+		hr
+		{
+			color: white !important;
+			&.QuarterWide
+			{
+				width: 25% !important;
+			}
+			&.HalfWide
+			{
+				width: 50% !important;
+			}
+			&.TQW
+			{
+				width: 75%;
+			}
 		}
 	}
 }

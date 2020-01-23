@@ -1,89 +1,211 @@
-
-<nav class="HorNav">
-	<mat-toolbar>
-		<mat-toolbar-row class="HornavContent">
-
-			<button mat-button class="HornavButton" id="HomePage"  routerLink="home" mat-button>
-				<img src="https://img.icons8.com/material-two-tone/24/000000/home-page.png">
-				Home
-			</button>
-
-			<button class="HornavButton" mat-button [matMenuTriggerFor]="AboutPage">
-				<img src="https://img.icons8.com/material-two-tone/24/000000/about.png">
-				About
-			</button>
+<div class="nav-container" style="display:initial">
+	<nav class="HorNav">
+		<button mat-button class="HornavButton" id="HomePage"  routerLink="home" mat-button>
+			<img src="https://img.icons8.com/material-two-tone/24/000000/home-page.png">
+			Home
+		</button>
+		<button class="HornavButton" mat-button [matMenuTriggerFor]="AboutPage">
+			<img src="https://img.icons8.com/material-two-tone/24/000000/about.png">
+			About
 			<mat-menu #AboutPage="matMenu" xPosition="after">
 				<button class="dropdown-item" routerLink="about/me" mat-menu-item>
-					<!-- <a class="dropdown-item" routerLink="about/me"> -->
 					About Me
-					<!-- </a> -->
 				</button>
-				<a class="dropdown-item" routerLink="about/site" mat-menu-item>
+				<button class="dropdown-item" routerLink="about/skillz" mat-menu-item>
+					Skills &amp; Experiences
+				</button>
+				<button class="dropdown-item" routerLink="about/site" mat-menu-item>
 					This Website
-				</a>
+				</button>
 			</mat-menu>
-
-			<button class="HornavButton" mat-button [matMenuTriggerFor]="ProjectPage">
-				<img src="https://img.icons8.com/material-two-tone/24/000000/group-of-projects.png">
-				Projects
-			</button>
-				<mat-menu #ProjectPage="matMenu">
-					<!-- <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button> -->
-					<button class="dropdown-item" mat-menu-item routerLink="projects/profesional">
-						Professional Works
-					</button>
-					<button class="dropdown-item" routerLink="projects/personal" mat-menu-item>
-						Personal Bests
-					</button>
-				</mat-menu>
-					<!-- <mat-menu #Professional="matMenu">
-						<button mat-menu-item [routerLink]="['projects/profesional/']" fragment="Scripting">
-							Modelling &amp; Sculpting
-						</button>
-						<button mat-menu-item>Animation</button>
-						<button mat-menu-item>2D Art &amp; Animation</button>
-						<button mat-menu-item>Coding</button>
-						<button mat-menu-item>Game Dev</button>
-					</mat-menu>
-					<mat-menu #Personal="matMenu">
-						<button mat-menu-item routerLink="projects/profesional">
-							Education/Tutorial Projects
-						</button>
-						<button mat-menu-item>
-							Global Game Jam
-						</button>
-						<button mat-menu-item>
-							Environment Eight
-						</button>
-						<button mat-menu-item>
-							Fourty-Art-Hour Weekends
-						</button>
-					</mat-menu> -->
-					<!-- ^ Should this be Popup Sections of a mosaic instead? ^ -->
-			<button class="HornavButton" mat-button [matMenuTriggerFor]="ContactPage">
-				<img src="https://img.icons8.com/material-two-tone/24/000000/add-contact-to-company.png">
-				Contact
-			</button>
+		</button>
+		<button class="HornavButton" mat-button [matMenuTriggerFor]="ProjectPage">
+			<img src="https://img.icons8.com/material-two-tone/24/000000/group-of-projects.png">
+			Projects
+			<mat-menu #ProjectPage="matMenu" xPosition="after">
+				<button class="dropdown-item" mat-menu-item routerLink="projects/professional">
+					Professional Works
+				</button>
+				<!-- <button class="dropdown-item" mat-menu-item routerLink="projects/education">
+					Learning Points
+				</button> -->
+				<button class="dropdown-item" mat-menu-item routerLink="projects/personal">
+					Personal Bests
+				</button>
+			</mat-menu>
+		</button>
+		<button class="HornavButton" mat-button [matMenuTriggerFor]="ContactPage">
+			<img src="https://img.icons8.com/material-two-tone/24/000000/add-contact-to-company.png">
+			Contact
 			<mat-menu #ContactPage="matMenu" xPosition="after">
-				<a class="dropdown-item" routerLink="contact/me" mat-menu-item>
+				<button class="dropdown-item" mat-menu-item routerLink="contact/me">
 					Me
-				</a>
-				<!-- <a class="dropdown-item" routerLink="contact/socials" mat-menu-item>
-					Social Links
-				</a> -->
-				<a class="dropdown-item" routerLink="contact/commissions" mat-menu-item>
-					Commissions
-				</a>
+				</button>
+				<button class="dropdown-item" mat-menu-item routerLink="contact/questions" disabled>
+					FAQ
+				</button>
+				<button class="dropdown-item" mat-menu-item routerLink="contact/comments">
+					FeedBack
+				</button>
 			</mat-menu>
-			<a class="HornavButton" id="FAQ"  routerLink="faq" mat-button>
-				<img src="https://img.icons8.com/material-two-tone/24/000000/faq.png">
-				FAQ / Q &amp; A
-			</a>
-			<a class="HornavButton" id="FAQ"  routerLink="feedback" mat-button>
-				<img src="https://img.icons8.com/material-two-tone/24/000000/feedback.png">
-				Feedback
-			</a>
-		</mat-toolbar-row>
-	</mat-toolbar>
-</nav>
+		</button>
+		<button class="HornavButton" mat-button [matMenuTriggerFor]="ShoppingPage">
+			<img src="https://img.icons8.com/material-two-tone/24/000000/online-store--v2.png">
+			Shopping
+			<mat-menu #ShoppingPage="matMenu" xPosition="after">
+				<!-- <button class="dropdown-item" routerLink="shop/store" mat-menu-item> -->
+				<button class="dropdown-item" mat-menu-item routerLink="shop/store" disabled>
+					Online Storefront
+				</button>
+				<!-- <button class="dropdown-item" routerLink="shop/commission" mat-menu-item> -->
+				<button class="dropdown-item" mat-menu-item routerLink="shop/commission" disabled>
+					Commissions
+				</button>
+			</mat-menu>
+		</button>
+	</nav>
+</div>
 
+<!-- <ul class="MainMenu">
+	<li class="MainItem" id="HomePage">
+		<a class="PageLink" [routerLink]="[ '/home' ]" routerLinkActive="active">
+			<img src="https://img.icons8.com/material-two-tone/24/000000/home-page.png">
+			Home
+		</a>
+	</li>
+	<li class="MainItem" id="AboutPage">
+		<a class="PageLink" [routerLink]="[ '/about' ]" routerLinkActive="active">
+			<img src="https://img.icons8.com/material-two-tone/24/000000/about.png">
+			About
+			<i class="icon ion md-arrow-dropdown"></i>
+		</a>
+		<ul class="SubMenu">
+			<li class="SubItem">
+				<a [routerLink]="[ '/about/me' ]" routerLinkActive="active">
+					About Me
+				</a>
+			</li>
+			<li class="SubItem">
+				<a [routerLink]="[ '/about/site' ]" routerLinkActive="active">
+					This Site
+				</a>
+			</li>
+		</ul>
+	</li>
+	<li class="MainItem" id="ProjectPage">
+		<a class="PageLink" [routerLink]="[ '/projects' ]" routerLinkActive="active">
+			<img src="https://img.icons8.com/material-two-tone/24/000000/group-of-projects.png">
+			Projects
+			<i class="icon ion md-arrow-dropdown"></i>
+		</a>
+		<ul class="SubMenu">
+			<li class="SubItem">
+				<a [routerLink]="[ '/projects/professional' ]" routerLinkActive="active">
+					Professional Works
+				</a>
+				<i class="icon ion md-arrow-dropdown"></i>
+				<ul class="ShardMenu">
+					<li class="ShardIten">
+						<a [routerLink]="[ '/home' ]" routerLinkActive="active">
+							Modelling &amp; Sculpting
+						</a>
+					</li>
+					<li class="ShardIten">
+						<a [routerLink]="[ '/home' ]" routerLinkActive="active">
+							Animation
+						</a>
+					</li>
+					<li class="ShardIten">
+						<a [routerLink]="[ '/home' ]" routerLinkActive="active">
+							2D Art &amp; Animation
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="SubItem">
+				<a [routerLink]="[ '/home' ]" routerLinkActive="active">
+					Learning Curves
+				</a>
+				<i class="icon ion md-arrow-dropdown"></i>
+				<ul class="ShardMenu">
+					<li class="ShardIten">
+						<a [routerLink]="[ '/home' ]" routerLinkActive="active">
+							Educational Projects
+						</a>
+					</li>
+					<li class="ShardIten">
+						<a [routerLink]="[ '/home' ]" routerLinkActive="active">
+							Self-Directed Learning
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="SubItem">
+				<a [routerLink]="[ '/home' ]" routerLinkActive="active">
+					Personal Bests
+				</a>
+				<i class="icon ion md-arrow-dropdown"></i>
+				<ul class="ShardMenu">
+					<li class="ShardIten">
+						<a [routerLink]="[ '/home' ]" routerLinkActive="active">
+							HindSight
+						</a>
+					</li>
+					<li class="ShardIten">
+						<a [routerLink]="[ '/home' ]" routerLinkActive="active">
+							Fourty-Art-Hour Weekends
+						</a>
+					</li>
+					<li class="ShardIten">
+						<a [routerLink]="[ '/home' ]" routerLinkActive="active">
+							Environment Eight
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li class="MainItem" id="ContactPage">
+		<a class="PageLink" [routerLink]="[ '/home' ]" routerLinkActive="active">
+			<img src="https://img.icons8.com/material-two-tone/24/000000/add-contact-to-company.png">
+			General Queries
+			<i class="icon ion md-arrow-dropdown"></i>
+		</a>
+		<ul class="SubMenu">
+			<li class="SubItem">
+				<a [routerLink]="[ '/home' ]" routerLinkActive="active">
+					Contact Me
+				</a>
+			</li>
+			<li class="SubItem">
+				<a [routerLink]="[ '/home' ]" routerLinkActive="active">
+					FAQ / Q&amp;A
+				</a>
+			</li>
+			<li class="SubItem">
+				<a [routerLink]="[ '/home' ]" routerLinkActive="active">
+					Feedback Form
+				</a>
+			</li>
+		</ul>
+	</li>
+	<li class="MainItem" id="ShoppingPage">
+		<a class="PageLink" [routerLink]="[ '/home' ]" routerLinkActive="active">
+			<img src="https://img.icons8.com/material-two-tone/24/000000/online-store--v2.png">
+			Shopping
+			<i class="icon ion md-arrow-dropdown"></i>
+		</a>
+		<ul class="SubMenu">
+			<li class="SubItem">
+				<a [routerLink]="[ '/home' ]" routerLinkActive="active">
+					Online Store
+				</a>
+			</li>
+			<li class="SubItem">
+				<a [routerLink]="[ '/home' ]" routerLinkActive="active">
+					Commision Me!
+				</a>
+			</li>
+		</ul>
+	</li>
+</ul> -->

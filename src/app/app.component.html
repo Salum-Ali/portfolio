@@ -12,32 +12,33 @@
     </div>
     <hr class="HalfWide">
     <app-corenav></app-corenav>
+    <hr class="TQW">
   </header>
 
   <div class="SubGrid MainItem" id="BodyWrap">
     <div class="SubItem" id="PageBlurb">
       <div id="JumpNav">
-        <p class="TEST">
+        <div class="TEST">
           <app-backjump></app-backjump>
           <app-forwardjump></app-forwardjump>
-        </p>
+        </div>
       </div>
       <div id="BlurbSection">
         <app-mainblurb></app-mainblurb>
       </div>
     </div>
     <aside class="SubItem" id="FeedNav">
-      <!-- <app-feednav *ngIf="!router.url.includ+es('contact/socials')"></app-feednav> -->
       <app-feednav></app-feednav>
     </aside>
     <main class="SubItem" id="RouterContent">
       <div id="CurrentRout">
         <p>
-          Your Current Route: <br>{{location.path()}}
+          Your Current Route:<br>
+          {{location.path()}}
         </p>
       </div>
       
-      <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
     </main>
     <div  class="SubItem" id="HorAd">
       <app-adhorizontal></app-adhorizontal>
@@ -45,8 +46,9 @@
   </div>
 
   <footer class="SubGrid MainItem" id="FooterWrap">
+    <hr class="QTW">
+    <app-motto></app-motto>
     <hr class="HalfWide">
-
     <app-footnav></app-footnav>
     <hr class="QuarterWide">
     <app-topjump></app-topjump>

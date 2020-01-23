@@ -16,6 +16,7 @@ import { MeComponent } from './rout/about/me/me.component';
 import { ResumeComponent } from './rout/resume/resume.component';
 // Personal Portfolio
 import { PersonalComponent } from './rout/resume/personal/personal.component';
+import { JamComponent } from './rout/resume/personal/jam/jam.component';
 // Professional Portfolio
 import { ProfessionalComponent } from './rout/resume/professional/professional.component';
 // 3D Work
@@ -28,21 +29,26 @@ import { TexturingComponent } from './rout/resume/professional/texturing/texturi
 import { ModelingComponent } from './rout/resume/professional/modeling/modeling.component';
 
 
+
 // Contact
 import { ContactComponent } from './rout/contact/contact.component';
-import { SocialComponent } from './rout/contact/social/social.component';
 import { CommmissionComponent } from './rout/contact/commmission/commmission.component';
 import { ConnectComponent } from './rout/contact/connect/connect.component';
 
 // FAQ
-import { QuestionComponent } from './rout/question/question.component';
+import { QuestionComponent } from './rout/contact/question/question.component';
 
 // FeedBack
 import { CommentComponent } from './rout/comment/comment.component';
 
 // Ignore For Now
-import { LogoComponent } from './rout/resume/logo/logo.component';
+
+// To Be Sotred
 import { PosterComponent } from './rout/resume/poster/poster.component';
+import { HindsightComponent } from './rout/resume/personal/hindsight/hindsight.component';
+import { FortComponent } from './rout/resume/personal/fort/fort.component';
+import { E8Component } from './rout/resume/personal/e8/e8.component';
+import { SkillzComponent } from './rout/about/skillz/skillz.component';
 
 
 const routes: Routes = [
@@ -76,6 +82,13 @@ const routes: Routes = [
           }
       },
       {
+          path: 'skillz',
+          component: SkillzComponent,
+          data: {
+            title: 'About - Work-Based Skills'
+          }
+      },
+      {
           path: 'site',
           component: SiteComponent,
           data: {
@@ -95,17 +108,22 @@ const routes: Routes = [
           pathMatch: 'full'
       },
       {
-        path: 'profesional',
+        path: 'professional',
         component: ProfessionalComponent,
-        // data: {
-        //   title: 'Projects - Personal'
-        // }
+        data: {
+          title: 'Projects - Professional'
+        },
         children: [
+        {
+          path: '',
+          redirectTo: 'modeling',
+          pathMatch: 'full'
+        },
           {
             path: 'modeling',
             component: ModelingComponent,
             data: {
-              title: 'Projects - Modeling '
+              title: 'Professional Works - 3D Modeling '
             }
           },
           // ^ 3D Modelling & Sculpting ^
@@ -113,7 +131,7 @@ const routes: Routes = [
             path: 'animation',
             component: AnimationComponent,
             data: {
-              title: 'Projects - Animation'
+              title: 'Professional Works - Animation'
             }
           },
           // ^ Animations ^
@@ -121,7 +139,7 @@ const routes: Routes = [
             path: 'art',
             component: TexturingComponent,
             data: {
-              title: 'Projects - Texturing'
+              title: 'Professional Works - 2D Arts'
             }
           },
           // ^ 2D Arts inc. Logos ^
@@ -129,7 +147,7 @@ const routes: Routes = [
             path: 'coding',
             component: ScriptingComponent,
             data: {
-              title: 'Projects - Programming'
+              title: 'Professional Works - Programming'
             }
           },
           // ^ Anything Programming Related ^
@@ -141,9 +159,48 @@ const routes: Routes = [
         component: PersonalComponent,
         data: {
           title: 'Projects - Personal'
-        }
+        },
+        children: [
+        {
+          path: '',
+          redirectTo: 'jams',
+          pathMatch: 'full'
+        },
+          {
+            path: 'jams',
+            component: JamComponent,
+            data: {
+              title: 'Personal Bests - Game Jams'
+            }
+          },
+          // ^ Game and Other Jams ^
+          {
+            path: 'hindsight',
+            component: HindsightComponent,
+            data: {
+              title: 'Personal Bests - Project: HindSight'
+            }
+          },
+          // ^ Project HindSight - 2020 ^
+          {
+            path: 'fourty-art-hour-weekends',
+            component: FortComponent,
+            data: {
+              title: 'Personal Bests - FAWH'
+            }
+          },
+          // ^ Fourty-Art-Hour Weekends - 2019 ^
+          {
+            path: 'environment-eight',
+            component: E8Component,
+            data: {
+              title: 'Personal Bests - Environment Eight'
+            }
+          },
+          // ^ Environment Eight - May->December 2018 ^
+        ]
       }
-      // Personal Bests
+      // ^ Personal Bestss ^
     ]
   },
   // ^ CV's ^
@@ -165,16 +222,16 @@ const routes: Routes = [
       },
       // ^ Contact Me ^
       {
-        path: 'socials',
-        component: SocialComponent,
-        data: {
-          title: 'Contact - Socials'
-        }
+          path: 'questions',
+          component: QuestionComponent,
+          data: {
+            title: 'Contact - Details'
+          }
       },
-      // ^ Social Media Link List ^
+      // ^ Contact Me ^
       {
-          path: 'commissions',
-          component: CommmissionComponent,
+          path: 'comments',
+          component: CommentComponent,
           data: {
             title: 'Contact - Commissions'
           }

@@ -1,29 +1,12 @@
-<h3>
-	3D Modelling / Sculpting
-</h3>
 <p>
-	<app-modeling></app-modeling>
+	This is where I will put projects which i'd be comfortable showing to potential employers or commission clients.
 </p>
 
-<h3>
 
-</h3>
+<nav mat-tab-nav-bar mat-align-tabs="center" dynamicHeight="true">
+	<a id="NavTab" mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+		{{link.label}}
+	</a>
+</nav>
 
-<ul>
-	<li id="Modelling">
-		<router-outlet name="modeling"></router-outlet>
-	</li>
-	<!-- <li id="Animation">
-		Animation
-		<app-animation></app-animation>
-	</li> -->
-	<!-- ^ To Be Considered ^ -->
-	<li id="Texturing">
-		2D Art &amp; Texturing
-		<app-texturing></app-texturing>
-	</li>
-	<li id="Scripting">
-		Scripting / Coding / Programming
-		<app-scripting></app-scripting>
-	</li>
-</ul>
+<router-outlet></router-outlet>

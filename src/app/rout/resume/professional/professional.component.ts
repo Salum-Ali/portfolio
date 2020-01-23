@@ -7,6 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfessionalComponent implements OnInit {
 
+  navLinks = [
+    {
+      path: 'modeling',
+      label: '3D Modeling'
+    },
+    // {
+    //   path: 'animation',
+    //   label: 'Animations'
+    // },
+    {
+      path: 'art',
+      label: '2D Arts'
+    },
+    {
+      path: 'coding',
+      label: 'Programming'
+    },
+  ];
+
   constructor() { }
 
   ngOnInit() {
