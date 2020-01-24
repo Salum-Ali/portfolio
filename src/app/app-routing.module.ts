@@ -39,7 +39,7 @@ import { ConnectComponent } from './rout/contact/connect/connect.component';
 import { QuestionComponent } from './rout/contact/question/question.component';
 
 // FeedBack
-import { CommentComponent } from './rout/comment/comment.component';
+import { CommentComponent } from './rout/contact/comment/comment.component';
 
 // Ignore For Now
 
