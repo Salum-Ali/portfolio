@@ -95,6 +95,8 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 			&.LetterBody
 			{
 				font-family: 'Cinzel', serif;
+				font-variant: small-caps;
+				font-size: 1.25em;
 			}
 		}
 		ul
