@@ -17,12 +17,7 @@
 
   <div class="SubGrid MainItem" id="BodyWrap">
     <div class="SubItem" id="PageBlurb">
-      <div id="JumpNav">
-        <div class="TEST">
-          <app-backjump></app-backjump>
-          <app-forwardjump></app-forwardjump>
-        </div>
-      </div>
+
       <div id="BlurbSection">
         <app-mainblurb></app-mainblurb>
       </div>
@@ -36,6 +31,12 @@
           Your Current Route:<br>
           {{location.path()}}
         </p>
+        <div id="JumpNav">
+          <div class="TEST">
+            <app-backjump></app-backjump>
+            <app-forwardjump></app-forwardjump>
+          </div>
+        </div>
       </div>
       
     <router-outlet></router-outlet>
