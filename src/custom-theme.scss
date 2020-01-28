@@ -89,19 +89,24 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 		}
 		p
 		{
-			font-size: large;
+			font-size: x-large;
 			padding: 1em;
 			text-align: left;
 			&.LetterBody
 			{
 				font-family: 'Cinzel', serif;
 				font-variant: small-caps;
-				font-size: 1.25em;
+				font-size: 1.45em;
 			}
 		}
+		// p, h1, h2, h3, h4, h5, h6, span
+		// {
+		// 	color: rgb(200, 200, 200);
+		// }
 		ul
 		{
 			text-align: left;
+			font-size: x-large;
 		}
 		a
 		{

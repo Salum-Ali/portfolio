@@ -70,6 +70,8 @@ import { FortComponent } from './rout/resume/personal/fort/fort.component';
 import { SkillzComponent } from './rout/about/skillz/skillz.component';
 import { CreditComponent } from './unit/pagenav/footnav/credit/credit.component';
 import { MottoComponent } from './unit/pagenav/footnav/motto/motto.component';
+import { ShopComponent } from './rout/shop/shop.component';
+import { StoreComponent } from './rout/shop/store/store.component';
 
 @NgModule({
   declarations: [
@@ -111,6 +113,8 @@ import { MottoComponent } from './unit/pagenav/footnav/motto/motto.component';
     SkillzComponent,
     CreditComponent,
     MottoComponent,
+    ShopComponent,
+    StoreComponent,
   ],
   imports: [
     AdsenseModule.forRoot(),
