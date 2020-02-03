@@ -21,12 +21,11 @@ import { ModelingComponent } from './rout/resume/professional/modeling/modeling.
 import { PersonalComponent } from './rout/resume/personal/personal.component';
 import { AnimationComponent } from './rout/resume/professional/animation/animation.component';
 import { TexturingComponent } from './rout/resume/professional/texturing/texturing.component';
-import { PosterComponent } from './rout/resume/poster/poster.component';
 import { ResumeComponent } from './rout/resume/resume.component';
 import { ScriptingComponent } from './rout/resume/professional/scripting/scripting.component';
 
 import { ContactComponent } from './rout/contact/contact.component';
-import { CommmissionComponent } from './rout/contact/commmission/commmission.component';
+import { CommmissionComponent } from './rout/shop/commmission/commmission.component';
 import { ConnectComponent } from './rout/contact/connect/connect.component';
 
 import { QuestionComponent } from './rout/contact/question/question.component';
@@ -89,7 +88,6 @@ import { StoreComponent } from './rout/shop/store/store.component';
     MeComponent,
     AnimationComponent,
     TexturingComponent,
-    PosterComponent,
     ResumeComponent,
     ScriptingComponent,
     ContactComponent,

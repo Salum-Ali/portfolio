@@ -32,7 +32,7 @@ import { ModelingComponent } from './rout/resume/professional/modeling/modeling.
 
 // Contact
 import { ContactComponent } from './rout/contact/contact.component';
-import { CommmissionComponent } from './rout/contact/commmission/commmission.component';
+import { CommmissionComponent } from './rout/shop/commmission/commmission.component';
 import { ConnectComponent } from './rout/contact/connect/connect.component';
 
 // FAQ
@@ -44,7 +44,7 @@ import { CommentComponent } from './rout/contact/comment/comment.component';
 // Ignore For Now
 
 // To Be Sotred
-import { PosterComponent } from './rout/resume/poster/poster.component';
+import { PosterComponent } from './rout/resume/professional/texturing/poster/poster.component';
 import { HindsightComponent } from './rout/resume/personal/hindsight/hindsight.component';
 import { FortComponent } from './rout/resume/personal/fort/fort.component';
 import { E8Component } from './rout/resume/personal/e8/e8.component';
