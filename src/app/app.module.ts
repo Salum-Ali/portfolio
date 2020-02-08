@@ -71,6 +71,8 @@ import { CreditComponent } from './unit/pagenav/footnav/credit/credit.component'
 import { MottoComponent } from './unit/pagenav/footnav/motto/motto.component';
 import { ShopComponent } from './rout/shop/shop.component';
 import { StoreComponent } from './rout/shop/store/store.component';
+import { PosterComponent } from './rout/resume/professional/texturing/poster/poster.component';
+import { LogComponent } from './rout/log/log.component';
 
 @NgModule({
   declarations: [
@@ -113,6 +115,8 @@ import { StoreComponent } from './rout/shop/store/store.component';
     MottoComponent,
     ShopComponent,
     StoreComponent,
+    PosterComponent,
+    LogComponent,
   ],
   imports: [
     AdsenseModule.forRoot(),

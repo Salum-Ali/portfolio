@@ -41,6 +41,10 @@ import { QuestionComponent } from './rout/contact/question/question.component';
 // FeedBack
 import { CommentComponent } from './rout/contact/comment/comment.component';
 
+// Logs
+import { LogComponent } from './rout/log/log.component';
+
+
 // Ignore For Now
 
 // To Be Sotred
@@ -253,6 +257,14 @@ const routes: Routes = [
       title: 'Feedback / Queries'
     }
   },
+  {
+    path: 'logs',
+    component: LogComponent,
+    data: {
+      title: 'Logs'
+    }
+  },
+  // ^ HomePage Stuff ^
   {
     path:  '**',
     redirectTo:  '404',
