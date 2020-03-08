@@ -60,6 +60,7 @@ import { AdspaceComponent } from './section/adspace/adspace.component';
 import { AdverticalComponent } from './section/adspace/advertical/advertical.component';
 import { AdhorizontalComponent } from './section/adspace/adhorizontal/adhorizontal.component';
 // import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { StudyComponent } from './rout/resume/personal/study/study.component';
 import { JamComponent } from './rout/resume/personal/jam/jam.component';
@@ -136,6 +137,8 @@ import { LogComponent } from './rout/log/log.component';
     MatTabsModule,
     MatGridListModule,
     // FlexLayoutModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [
     Title

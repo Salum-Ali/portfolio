@@ -1,32 +1,9 @@
-// import { Component } from '@angular/core';
-// import { Router } from '@angular/router';
-// import { Title } from '@angular/platform-browser';
-
-
-// @Component({
-//   selector: 'app-root',
-//   templateUrl: './app.component.html',
-//   styleUrls: ['./app.component.sass']
-// })
-// export class AppComponent {
-//   // title = 'portfolio-website';
-
-//   constructor(private router: Router, private titleService: Title) {}
-
-//   // setDocTitle(title: string) {
-//   //    console.log('current title:::::' + this.titleService.getTitle());
-//   //    this.titleService.setTitle(title);
-//   // }
-//   public setTitle( newTitle: string) {
-//     this.titleService.setTitle( newTitle );
-//   }
-// }
-
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { filter, map } from 'rxjs/operators';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
     selector: 'app-root',
@@ -41,8 +18,8 @@ export class AppComponent implements OnInit {
   MottoShort = '~|~ Remember, Live, Dream ~|~';
 //   public href: string = '';
 
-
-    constructor(private router: Router, private activatedRoute: ActivatedRoute, private titleService: Title, public location: Location) {
+    contactForm: FormGroup;
+    constructor(private router: Router, private activatedRoute: ActivatedRoute, private titleService: Title, public location: Location, private formBuilder: FormBuilder) {
         this.router.events.pipe(
             filter(event => event instanceof NavigationEnd),
             map(() => {
