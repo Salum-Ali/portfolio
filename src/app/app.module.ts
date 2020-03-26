@@ -129,7 +129,6 @@ import { LogComponent } from './rout/log/log.component';
     MatSidenavModule,
     MatDividerModule,
     MatTreeModule,
-    BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
     // Specify library as an import (Twitter Feed Widget)
