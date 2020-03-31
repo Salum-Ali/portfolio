@@ -62,19 +62,20 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 		{
 			background-color: white;
 		}
+		// ^ Material Tabs Buttons When Width is Smaller than Content ^
 		.mat-tab-link-container
 		{
 			// padding: 0.5em 0em 0.5em 0em;
 			border: 1px solid white;
 			.mat-tab-link
 			{
-				// background-color: grey;
 				color: white;
 				margin: 0.25em;
 				&:hover, &.mat-tab-label-active
 				{
 					background-color: grey;
 				}
+				// ^ Highlights Current Angular Material Tab ^
 			}
 		}
 		.mat-tab-nav-bar.mat-primary .mat-ink-bar

@@ -75,6 +75,7 @@ import { StoreComponent } from './rout/shop/store/store.component';
 import { PosterComponent } from './rout/resume/professional/texturing/poster/poster.component';
 import { LogComponent } from './rout/log/log.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
