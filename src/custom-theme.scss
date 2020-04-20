@@ -93,6 +93,12 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 			font-size: x-large;
 			padding: 1em;
 			text-align: left;
+			&.SubBlurb
+			{
+				border: 1px solid white;
+				margin: 0px;
+				text-align: center;
+			}
 			// &.LetterBody
 			// {
 			// 	font-family: 'Cinzel', serif;
