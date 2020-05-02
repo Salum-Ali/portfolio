@@ -12,10 +12,11 @@ export class PersonalComponent implements OnInit {
       path: 'jams',
       label: 'Game Jams & Recurring Projects'
     },
-    {
-      path: 'hindsight',
-      label: 'Project: HindSight'
-    },
+    // {
+    //   path: 'hindsight',
+    //   label: 'Project: HindSight'
+    // },
+    // ^ Currently W-I-P ^
     {
       path: 'fourty-art-hour-weekends',
       label: 'Fourty-Art-Hour Weekends'

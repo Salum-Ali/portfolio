@@ -5,10 +5,12 @@ import { filter, map } from 'rxjs/operators';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { trigger, state, style, transition, animate, group } from '@angular/animations';
+// import fade in animation
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
+
     styleUrls: ['./app.component.sass'],
     providers: [Location, {provide: LocationStrategy, useClass: PathLocationStrategy}]
 

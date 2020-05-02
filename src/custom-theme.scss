@@ -87,6 +87,10 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 			margin: 0.5em;
 			font-family: 'Cinzel Decorative', cursive;
 			font-weight: 400;
+			&.ListSubHeading
+			{
+				text-align: left;
+			}
 		}
 		p
 		{
