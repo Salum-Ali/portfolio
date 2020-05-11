@@ -3,10 +3,11 @@ import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { filter, map } from 'rxjs/operators';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
-import { FormGroup, FormBuilder } from '@angular/forms';
+// import {MatDialog} from '@angular/material';
 import { trigger, state, style, transition, animate, group } from '@angular/animations';
-// import fade in animation
-
+// ^ import fade in animation ^
+import { FormGroup, FormBuilder } from '@angular/forms';
+// ^ NTS: Fix This At Some Point ^
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -16,13 +17,22 @@ import { trigger, state, style, transition, animate, group } from '@angular/anim
 
 })
 export class AppComponent implements OnInit {
-  title = 'Salum Ali Muhammed - Creative Semi-Intermediate';
-  MottoLong = '~|~ Remember the Past, Live the Present, Dream the Future ~|~';
-  MottoShort = '~|~ Remember, Live, Dream ~|~';
-//   public href: string = '';
+    title = 'Salum Ali Muhammed - Creative Semi-Intermediate';
+    MottoLong = '~|~ Remember the Past, Live the Present, Dream the Future ~|~';
+    MottoShort = '~|~ Remember, Live, Dream ~|~';
+    //   public href: string = '';
 
-    contactForm: FormGroup;
-    constructor(private router: Router, private activatedRoute: ActivatedRoute, private titleService: Title, public location: Location, private formBuilder: FormBuilder) {
+    // contactForm: FormGroup;
+    // ^ Probably not important? Either that or supposed to be a constructor class ^
+    constructor(
+        private router: Router,
+        private activatedRoute: ActivatedRoute,
+        private titleService: Title,
+        public location: Location,
+        // public dialog: MatDialog,
+        private formBuilder: FormBuilder
+        // ^ Not Necicary - I just don't like linting errors ^
+        ) {
         this.router.events.pipe(
             filter(event => event instanceof NavigationEnd),
             map(() => {
@@ -50,7 +60,10 @@ export class AppComponent implements OnInit {
         // console.log(this.router.url);
         console.log(this.location.path());
     }
-
+    // openDialog() {
+    //     alert(222);
+    //     // this.dialog.open();
+    // }
 }
 
 // ^ CREDIT: mainly @Ankur's answer on SrackOverFlow

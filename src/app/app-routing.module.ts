@@ -9,14 +9,20 @@ import { NoneComponent } from './rout/none/none.component';
 
 // About
 import { AboutComponent } from './rout/about/about.component';
-import { SiteComponent } from './rout/about/site/site.component';
 import { MeComponent } from './rout/about/me/me.component';
+import { SkillzComponent } from './rout/about/skillz/skillz.component';
+import { SiteComponent } from './rout/about/site/site.component';
 
 // CV
 import { ResumeComponent } from './rout/resume/resume.component';
+
 // Personal Portfolio
 import { PersonalComponent } from './rout/resume/personal/personal.component';
 import { JamComponent } from './rout/resume/personal/jam/jam.component';
+import { HindsightComponent } from './rout/resume/personal/hindsight/hindsight.component';
+import { FortComponent } from './rout/resume/personal/fort/fort.component';
+import { E8Component } from './rout/resume/personal/e8/e8.component';
+
 // Professional Portfolio
 import { ProfessionalComponent } from './rout/resume/professional/professional.component';
 // 3D Work
@@ -28,7 +34,8 @@ import { TexturingComponent } from './rout/resume/professional/texturing/texturi
 // Scripting
 import { ModelingComponent } from './rout/resume/professional/modeling/modeling.component';
 
-
+// Pedagogy Portfolio
+import { PedagogyComponent } from './rout/resume/pedagogy/pedagogy.component';
 
 // Contact
 import { ContactComponent } from './rout/contact/contact.component';
@@ -48,12 +55,7 @@ import { LogComponent } from './rout/log/log.component';
 // Ignore For Now
 
 // To Be Sotred
-import { PosterComponent } from './rout/resume/professional/texturing/poster/poster.component';
-import { HindsightComponent } from './rout/resume/personal/hindsight/hindsight.component';
-import { FortComponent } from './rout/resume/personal/fort/fort.component';
-import { E8Component } from './rout/resume/personal/e8/e8.component';
-import { SkillzComponent } from './rout/about/skillz/skillz.component';
-
+// import { PosterComponent } from './rout/resume/professional/texturing/poster/poster.component';
 
 const routes: Routes = [
   {
@@ -203,8 +205,16 @@ const routes: Routes = [
           },
           // ^ Environment Eight - May->December 2018 ^
         ]
-      }
+      },
       // ^ Personal Bestss ^
+      {
+        path: 'pedagogy',
+        component: PedagogyComponent,
+        data: {
+          title: 'Projects - Eductational Projects'
+        }
+      }
+      // ^ Educational Projects ^
     ]
   },
   // ^ CV's ^

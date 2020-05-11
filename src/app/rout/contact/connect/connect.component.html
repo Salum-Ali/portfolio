@@ -1,217 +1,51 @@
-<!-- Work In Progress -->
+<!-- WIP-TDL - Eventual reation of an email form -->
 
-<style>
-	html{
-  background-color: wheat;
-}
+<h1>
+  Find me at...
+</h1>
 
-body{
-  background-color:white;
-  font-family: Rockwell, Georgia, serif;
-    max-width: 1000px;
-  width:90%;
-  margin: 0 auto;
-  box-shadow: 4px 4px 8px rgba(0,0,0.15)
-}
-h1{
-  background-color: tomato;
-  color: white;
-  text-align: center;
-  padding:6px;
-}
-.column{
-  width:50%;
-  float:left;
-  padding:2%;
-  box-sizing:border-box;
-}
-.column{
-  padding:3%;
-}
-/*clear-fix the parent of column because it collapsed!  */
-form:after{
-  content:'';
-  display:block;
-  clear:both;
-}
-
-/* FORM STUFF BEGINS HERE */
-form{
-  font-size:110%
-}
-label{
-  display:block;
-  color:saddlebrown;
-  margin:16px 0 3px;
-}
-fieldset label{
-  display:inline-block;
-  font-size:85%;
-  font-family: Calibri, sans-serif;
-}
-
-
-input[type=text],
-input[type=email],
-input[type=tel],
-textarea,
-select{
-  width:100%;
-  padding:5px;
-  box-sizing:border-box;
-  background-color:cornsilk;
-  border: solid 1px tan;
-  font-family:'Lucida Console', monospace;
-}
-textarea{
-  resize: vertical;
-  min-height: 70px;
-}
-fieldset{
-  border:none;
-  margin:20px 0 ;
-  padding:10px 0;
-  border-bottom: 1px solid tan;
-}
-legend{
-  color:white;
-  background-color:tan;
-  display:block;
-  width:100%;
-  padding:3px;
-}
-input[type=checkbox]{
-  background-color:red;
-  border: solid 1px red;
-  color:red;
-  outline:red;
-}
-/* BUTTONS */
-input[type=submit]{
-  background-color:forestgreen;
-  color:white;
-  border:none;
-  padding: 6px 20px;
-  font-size:110%;
-  border-radius:10px;
-  font-family: Rockwell, georgia, serif;
-}
-/* Reset Button: minimize the appearance */
-input[type=reset]{
-  background-color:transparent;
-  border:none;
-  text-decoration:underline;
-  cursor:pointer;
-  margin:20px 0;
-  color:olive;
-}
-
-/* hovers and tabs */
-input[type=text]:hover,
-input[type=email]:hover{
-  background-color:khaki;
-}
-input[type=text]:focus,
-input[type=email]:focus{
-  outline: 2px solid tan;
-}
-input[type=sumbit]:hover,
-input[type=submit]:focus{
-  background-color:limegreen;
-}
-/* responsive bonus round */
-@media screen and (min-width:450px){
-/*  2col  */
-  .column{
-    width:50%;
-    float:left;
-    padding:3%;
-    box-sizing:border-box;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-	/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: transparent;
-  padding: 20px;
-}
-
-</style>
-
-<div class="container">
-	<form action="action_page.php">
-  
-	  <label for="name">Name</label>
-	  <input type="text" id="name" name="yourname" placeholder="Your name..">
-  
-	  <label for="email">E-mail</label>
-	  <input type="text" id="email" name="emailaddress" placeholder="Your e-mail address..">
-  
-	  <!-- <label for="country">Country</label>
-	  <select id="country" name="country">
-		<option value="australia">Australia</option>
-		<option value="canada">Canada</option>
-		<option value="usa">USA</option>
-	  </select> -->
-	  <label for="subject">Subject</label>
-	  <input type="text" id="subject" name="subjectline" placeholder="Your e-mail address..">
-  
-	  <label for="subject">Message</label>
-	  <textarea id="message" name="msgbox" placeholder="Write something.." style="height:200px"></textarea>
-  
-	  <input type="submit" value="Submit">
-  
-	</form>
-  </div>
-
-  <h1> Template-Based Contact Form Example </h1>
-
-<form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
-  <input type = "text" name = "fullName" placeholder = "Your full name" ngModel>
-  <br/>
-
-  <input type = "email" name = "email" placeholder = "Your email" ngModel>
-  <br/>
-
-  <textarea name = "message" placeholder = "Your message" ngModel></textarea>
-  <br/>
-  <input type = "submit" value = "Send">
-</form>
+<nav class="HorNav SocialLinks">
+  <ul>
+    <li>
+			<a href="https://www.pinterest.co.uk/salummuhammed/" target="_blank">
+				<i class="fab fa-pinterest"></i>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.deviantart.com/deltatechproductions" target="_blank">
+				<i class="fab fa-deviantart"></i>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.linkedin.com/in/salum-ali-muhammed/" target="_blank">
+				<i class="fab fa-linkedin-in"></i>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.artstation.com/delta-studios/profile" target="_blank">
+				<i class="fab fa-artstation"></i>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.instagram.com/sam_rs_4/" target="_blank">
+				<i class="fab fa-instagram"></i>
+			</a>
+		</li>
+		<li>
+			<a href="https://twitter.com/samrs15" target="_blank">
+				<i class="fab fa-twitter"></i>
+			</a>
+		</li>
+		<li>
+			<a href="mailto:samrs.78610@gmail.com">
+				<i class="far fa-envelope"></i>
+				<!-- ^ NTS: fab style is for branding. far is for regular styles ^ -->
+			</a>
+		</li>
+		<li>
+			<a href="https://www.facebook.com/samrs761508/" target="_blank">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+		</li>
+	</ul>
+</nav>

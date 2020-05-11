@@ -16,10 +16,10 @@ export class ContactComponent implements OnInit {
     //   path: 'questions',
     //   label: 'FAQ'
     // },
-    {
-      path: 'comments',
-      label: 'Feedback'
-    },
+    // {
+    //   path: 'comments',
+    //   label: 'Feedback'
+    // },
   ];
 
   constructor() { }

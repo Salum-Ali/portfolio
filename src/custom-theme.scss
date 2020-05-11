@@ -33,7 +33,10 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 
 *
 {
+	// common styles
+	// transition: all 0.5s ease-in-out;
 	color: white;
+	// Elements
 	body
 	{
 		background-color: #000000;
@@ -50,47 +53,20 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 		text-align: center;
 		background-attachment: fixed;
 		font-family: 'Exo 2', sans-serif;
-		.HorNav
-		{
-			margin: 0.5em auto;
-		}
-		#NavTab
-		{
-			color: white;
-		}
-		.mat-tab-header-pagination
-		{
-			background-color: white;
-		}
-		// ^ Material Tabs Buttons When Width is Smaller than Content ^
-		.mat-tab-link-container
-		{
-			// padding: 0.5em 0em 0.5em 0em;
-			border: 1px solid white;
-			.mat-tab-link
-			{
-				color: white;
-				margin: 0.25em;
-				&:hover, &.mat-tab-label-active
-				{
-					background-color: grey;
-				}
-				// ^ Highlights Current Angular Material Tab ^
-			}
-		}
-		.mat-tab-nav-bar.mat-primary .mat-ink-bar
-		{
-			margin-bottom: 0.125em;
-		}
+
 		h1, h2, h3, h4, h5, h6
 		{
 			margin: 0.5em;
 			font-family: 'Cinzel Decorative', cursive;
 			font-weight: 400;
-			&.ListSubHeading
+			&.HeadingTitle
 			{
-				text-align: left;
+				text-align: center;
 			}
+			// &.ListSubHeading
+			// {
+			// 	text-align: left;
+			// }
 		}
 		p
 		{
@@ -114,10 +90,17 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 		// {
 		// 	color: rgb(200, 200, 200);
 		// }
-		ul
+		ul, li
 		{
 			text-align: left;
 			font-size: x-large;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			&.SubList
+			{
+				margin: 1em;
+			}
 		}
 		a
 		{
@@ -144,6 +127,98 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 			&.TQW
 			{
 				width: 75%;
+			}
+		}
+		nav
+		{
+			&.HorNav
+			{
+				// display: inline-block;
+				// margin: 0.5em auto;
+				&.SocialLinks
+				{
+					// background-color: #fff;
+					// padding: 0.125em;
+					ul
+					{
+					text-align: center;
+					li
+						{
+							display: inline-block;
+							margin: 0.5em;
+							padding: 0.5em;
+							:hover
+							{
+								transition: all 0.75s ease-in-out;
+								cursor: pointer;
+								background-color:yellow;
+								color: green;;
+								font-size: 1.25em;
+							}
+							a
+							{
+								width: 100%;
+								height: 100%;
+								background-color: white;
+								// margin: 0.125em;
+								padding: 0.5em;
+								// color: green;
+
+								.fab, .far
+									{
+									color: black;
+										// margin: 0.5em;
+									}
+							}
+						}
+					}
+				}
+			}
+		}
+		// Miscelaneouse
+		#NavTab
+		{
+			color: white;
+		}
+		// Overides
+		// Angular Material Tab Styling Overides
+		.mat-tab-header-pagination
+		{
+			background-color: white;
+		}
+		// ^ Material Tabs Buttons When Width is Smaller than Content ^
+		.mat-tab-link-container
+		{
+			// padding: 0.5em 0em 0.5em 0em;
+			border: 1px solid white;
+			.mat-tab-link
+			{
+				transition: all 0.75s ease;
+				color: white;
+				margin: 0.25em;
+				&:hover, &.mat-tab-label-active
+				{
+					background-color: grey;
+				}
+				// ^ Highlights Current Angular Material Tab ^
+			}
+		}
+		.mat-tab-nav-bar.mat-primary .mat-ink-bar
+		{
+			margin-bottom: 0.125em;
+		}
+		// Angular Material Dialog Box Overides
+		.mat-dialog-container
+		{
+			background-color: rgba($color: #000000, $alpha: 0.75);
+			.mat-dialog-content
+			{
+				font-size: 2em;
+				img
+				{
+					width: 50%;
+					height: 50%;
+				}
 			}
 		}
 	}

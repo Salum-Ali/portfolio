@@ -50,6 +50,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatDialogModule} from '@angular/material/dialog';
 
 // Others
 // Import ngx-twitter-timeline (Twitter Feed Widget)
@@ -74,6 +75,9 @@ import { ShopComponent } from './rout/shop/shop.component';
 import { StoreComponent } from './rout/shop/store/store.component';
 import { PosterComponent } from './rout/resume/professional/texturing/poster/poster.component';
 import { LogComponent } from './rout/log/log.component';
+import { PedagogyComponent } from './rout/resume/pedagogy/pedagogy.component';
+import { ChessSocZeroComponent } from './rout/resume/personal/e8/chess-soc-zero/chess-soc-zero.component';
+import { OceanSunsetComponent } from './rout/resume/personal/e8/ocean-sunset/ocean-sunset.component';
 
 
 @NgModule({
@@ -119,7 +123,15 @@ import { LogComponent } from './rout/log/log.component';
     StoreComponent,
     PosterComponent,
     LogComponent,
+    PedagogyComponent,
+    ChessSocZeroComponent,
+    OceanSunsetComponent,
   ],
+  entryComponents: [
+    OceanSunsetComponent
+    // ^ Environment Eight ^
+  ],
+  // ^ Mainly for Dialog/Modal Boxes ^
   imports: [
     AdsenseModule.forRoot(),
     BrowserModule,
@@ -132,6 +144,7 @@ import { LogComponent } from './rout/log/log.component';
     MatTreeModule,
     MatIconModule,
     MatButtonModule,
+    MatDialogModule,
     // Specify library as an import (Twitter Feed Widget)
     NgxTwitterTimelineModule,
     MatTabsModule,

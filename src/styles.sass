@@ -18,7 +18,7 @@
 
 		padding: 0.25em
 		grid-column: 2/12
-		border: 0.5em ridge white
+		border: 0.5em ridge rgba(255, 255, 255, 0.5)
 		display: grid
 		// max-height: 1080px
 		grid-template-columns: repeat(10, 1fr)
@@ -52,21 +52,51 @@
 	-moz-column-gap:      0px
 	column-gap:           0px
 	background-color: rgba(255, 255, 255, 0.25)
-	&#FAHW
-		-webkit-column-count: 3
-		-moz-column-count:    3
-		column-count:         3
-	&#EE
-		-webkit-column-count: 2
-		-moz-column-count:    2
-		column-count:         2
+	-webkit-column-count: 2
+	-moz-column-count:    2
+	column-count:         2
 	// ^ Optimal Viewing Angles ^
-	.GridPic
-		// padding: 1em
+	.GalleryContainer
+		position: relative
 		width: 100%
-		height: 100%
-		// width: 100% !important
-		// height: auto !important
+		height: auto
+		// display: inline-block
+		&:hover .GridOverlay
+			visibility: visible
+			opacity: 1
+			.text
+				// transform: translateY(0)
+		.GridPic
+			display: block
+			width: 100%
+			// ^ NTS: Keeps images from going outside row boundries ^
+			height: 100%
+			// width: 100% !important
+			// height: auto !important
+		.GridOverlay
+			cursor: pointer
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background: rgba(0, 0, 0, 0.5)
+			visibility: hidden
+			opacity: 0
+			display: flex
+			align-items: center
+			justify-content: center
+
+			// /* transition effect. not necessary */
+			transition: all 0.75s ease
+			button
+				background-color: #000000
+				height: 10%
+				.text
+					// color: #000000
+					font-size: 1.0625em
+					transition: all 0.75s ease
+					// transform: translateY(1em)
 @media (max-width: 1200px)
 	.GalleryGrid
 		-moz-column-count:    4
