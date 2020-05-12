@@ -12,10 +12,12 @@ import { HomeComponent } from './rout/home/home.component';
 
 import { NoneComponent } from './rout/none/none.component';
 
+// About Pages
 import { AboutComponent } from './rout/about/about.component';
 import { SiteComponent } from './rout/about/site/site.component';
 import { MeComponent } from './rout/about/me/me.component';
 
+// CV Pages
 import { ProfessionalComponent } from './rout/resume/professional/professional.component';
 import { ModelingComponent } from './rout/resume/professional/modeling/modeling.component';
 import { PersonalComponent } from './rout/resume/personal/personal.component';
@@ -23,6 +25,7 @@ import { AnimationComponent } from './rout/resume/professional/animation/animati
 import { TexturingComponent } from './rout/resume/professional/texturing/texturing.component';
 import { ResumeComponent } from './rout/resume/resume.component';
 import { ScriptingComponent } from './rout/resume/professional/scripting/scripting.component';
+import { PedagogyComponent } from './rout/resume/pedagogy/pedagogy.component';
 
 import { ContactComponent } from './rout/contact/contact.component';
 import { CommmissionComponent } from './rout/shop/commmission/commmission.component';
@@ -75,9 +78,11 @@ import { ShopComponent } from './rout/shop/shop.component';
 import { StoreComponent } from './rout/shop/store/store.component';
 import { PosterComponent } from './rout/resume/professional/texturing/poster/poster.component';
 import { LogComponent } from './rout/log/log.component';
-import { PedagogyComponent } from './rout/resume/pedagogy/pedagogy.component';
+
 import { ChessSocZeroComponent } from './rout/resume/personal/e8/chess-soc-zero/chess-soc-zero.component';
 import { OceanSunsetComponent } from './rout/resume/personal/e8/ocean-sunset/ocean-sunset.component';
+import { NightNebulaComponent } from './rout/resume/personal/e8/night-nebula/night-nebula.component';
+import { NorthernCloudsComponent } from './rout/resume/personal/e8/northern-clouds/northern-clouds.component';
 
 
 @NgModule({
@@ -126,9 +131,14 @@ import { OceanSunsetComponent } from './rout/resume/personal/e8/ocean-sunset/oce
     PedagogyComponent,
     ChessSocZeroComponent,
     OceanSunsetComponent,
+    NightNebulaComponent,
+    NorthernCloudsComponent,
   ],
   entryComponents: [
-    OceanSunsetComponent
+    OceanSunsetComponent,
+    ChessSocZeroComponent,
+    NightNebulaComponent,
+    NorthernCloudsComponent
     // ^ Environment Eight ^
   ],
   // ^ Mainly for Dialog/Modal Boxes ^
