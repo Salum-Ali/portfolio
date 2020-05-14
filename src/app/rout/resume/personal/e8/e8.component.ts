@@ -5,7 +5,7 @@ import {OceanSunsetComponent} from './ocean-sunset/ocean-sunset.component';
 import { ChessSocZeroComponent } from './chess-soc-zero/chess-soc-zero.component';
 import { NorthernCloudsComponent } from './northern-clouds/northern-clouds.component';
 import { NightNebulaComponent } from './night-nebula/night-nebula.component';
-// Probably-Terrible-Idea Individual Modal Refrences
+// ^ Probably-Terrible-Idea Individual Modal Refrences ^
 
 @Component({
   selector: 'app-e8',
