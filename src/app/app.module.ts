@@ -148,7 +148,7 @@ import { RoverAnualTwonineteenComponent } from './rout/resume/personal/fort/rove
     PotentialPosterComponent,
     RoverIntroTwonineteenComponent,
     RoverIntroTwoeighteenComponent,
-    RoverAnualTwonineteenComponent
+    RoverAnualTwonineteenComponent,
   ],
   entryComponents: [
     OceanSunsetComponent,
