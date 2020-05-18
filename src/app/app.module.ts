@@ -83,6 +83,14 @@ import { ChessSocZeroComponent } from './rout/resume/personal/e8/chess-soc-zero/
 import { OceanSunsetComponent } from './rout/resume/personal/e8/ocean-sunset/ocean-sunset.component';
 import { NightNebulaComponent } from './rout/resume/personal/e8/night-nebula/night-nebula.component';
 import { NorthernCloudsComponent } from './rout/resume/personal/e8/northern-clouds/northern-clouds.component';
+import { IslamLogoNeoComponent } from './rout/resume/personal/fort/islam-logo-neo/islam-logo-neo.component';
+import { IllustratorAssessmentComponent } from './rout/resume/personal/fort/illustrator-assessment/illustrator-assessment.component';
+import { RoverLogoOneComponent } from './rout/resume/personal/fort/rover-logo-one/rover-logo-one.component';
+import { RoverLogoTwoComponent } from './rout/resume/personal/fort/rover-logo-two/rover-logo-two.component';
+import { PotentialPosterComponent } from './rout/resume/personal/fort/potential-poster/potential-poster.component';
+import { RoverIntroTwonineteenComponent } from './rout/resume/personal/fort/rover-intro-twonineteen/rover-intro-twonineteen.component';
+import { RoverIntroTwoeighteenComponent } from './rout/resume/personal/fort/rover-intro-twoeighteen/rover-intro-twoeighteen.component';
+import { RoverAnualTwonineteenComponent } from './rout/resume/personal/fort/rover-anual-twonineteen/rover-anual-twonineteen.component';
 
 
 @NgModule({
@@ -133,17 +141,35 @@ import { NorthernCloudsComponent } from './rout/resume/personal/e8/northern-clou
     OceanSunsetComponent,
     NightNebulaComponent,
     NorthernCloudsComponent,
+    IslamLogoNeoComponent,
+    IllustratorAssessmentComponent,
+    RoverLogoOneComponent,
+    RoverLogoTwoComponent,
+    PotentialPosterComponent,
+    RoverIntroTwonineteenComponent,
+    RoverIntroTwoeighteenComponent,
+    RoverAnualTwonineteenComponent
   ],
   entryComponents: [
     OceanSunsetComponent,
     ChessSocZeroComponent,
     NightNebulaComponent,
-    NorthernCloudsComponent
+    NorthernCloudsComponent,
     // ^ Environment Eight ^
+    IslamLogoNeoComponent,
+    RoverLogoOneComponent,
+    PotentialPosterComponent,
+    RoverIntroTwoeighteenComponent,
+    RoverLogoTwoComponent,
+    RoverIntroTwonineteenComponent,
+    RoverAnualTwonineteenComponent,
+    IllustratorAssessmentComponent
+    // ^ Fourty-Art-Hour-Weekends ^
   ],
   // ^ Mainly for Dialog/Modal Boxes ^
   imports: [
     AdsenseModule.forRoot(),
+    // ^ This Probably will work ^
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
