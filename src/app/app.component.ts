@@ -18,8 +18,6 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 })
 export class AppComponent implements OnInit {
     title = 'Salum Ali Muhammed - Creative Semi-Intermediate';
-    MottoLong = '~|~ Remember the Past, Live the Present, Dream the Future ~|~';
-    MottoShort = '~|~ Remember, Live, Dream ~|~';
     //   public href: string = '';
 
     // contactForm: FormGroup;
