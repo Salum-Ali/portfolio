@@ -107,11 +107,17 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 			color: yellow;
 		}
 		span
-		&.SignatureMotto
 		{
-			display: block;
-			text-align: center;
-			// ^ Probaably not the 100% correct way of doing things, but it works, so I guess it's fine ^
+			&.SignatureMotto
+			{
+				display: block;
+				text-align: center;
+				// ^ Probaably not the 100% correct way of doing things, but it works, so I guess it's fine ^
+			}
+			&.mat-button-wrapper
+			{
+				color: black;
+			}
 		}
 		hr
 		{
@@ -231,7 +237,7 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 		}
 	}
 }
-span.mat-button-wrapper
+.EmptyPage
 {
-	color: black;
+	text-align: center;
 }

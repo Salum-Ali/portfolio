@@ -67,7 +67,7 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent,
     data: {
-      title: 'Home'
+      title: 'Portfolio Homepage'
     }
   },
   // ^ HomePage Stuff ^
@@ -84,21 +84,21 @@ const routes: Routes = [
           path: 'me',
           component: MeComponent,
           data: {
-            title: 'About - Me'
+            title: 'About | Salum Muhammed'
           }
       },
       {
           path: 'skillz',
           component: SkillzComponent,
           data: {
-            title: 'About - Work-Based Skills'
+            title: 'About | Workable Skills'
           }
       },
       {
           path: 'site',
           component: SiteComponent,
           data: {
-            title: 'About - the Site'
+            title: 'About | This Web-App'
           }
       }
     ]
@@ -116,9 +116,6 @@ const routes: Routes = [
       {
         path: 'professional',
         component: ProfessionalComponent,
-        data: {
-          title: 'Projects - Professional'
-        },
         children: [
         {
           path: '',
@@ -129,7 +126,7 @@ const routes: Routes = [
             path: 'modeling',
             component: ModelingComponent,
             data: {
-              title: 'Professional Works - 3D Modeling '
+              title: 'Professional Works | 3D Modeling '
             }
           },
           // ^ 3D Modelling & Sculpting ^
@@ -137,7 +134,7 @@ const routes: Routes = [
             path: 'animation',
             component: AnimationComponent,
             data: {
-              title: 'Professional Works - Animation'
+              title: 'Professional Works | Animation'
             }
           },
           // ^ Animations ^
@@ -145,7 +142,7 @@ const routes: Routes = [
             path: 'art',
             component: TexturingComponent,
             data: {
-              title: 'Professional Works - 2D Arts'
+              title: 'Professional Works | 2D Arts'
             }
           },
           // ^ 2D Arts inc. Logos ^
@@ -153,7 +150,7 @@ const routes: Routes = [
             path: 'coding',
             component: ScriptingComponent,
             data: {
-              title: 'Professional Works - Programming'
+              title: 'Professional Works | Programming'
             }
           },
           // ^ Anything Programming Related ^
@@ -211,7 +208,7 @@ const routes: Routes = [
         path: 'pedagogy',
         component: PedagogyComponent,
         data: {
-          title: 'Projects - Eductational Projects'
+          title: 'Projects | Eductational'
         }
       }
       // ^ Educational Projects ^
@@ -231,7 +228,7 @@ const routes: Routes = [
           path: 'me',
           component: ConnectComponent,
           data: {
-            title: 'Contact - Details'
+            title: 'Contact | Details'
           }
       },
       // ^ Contact Me ^
@@ -239,33 +236,19 @@ const routes: Routes = [
           path: 'questions',
           component: QuestionComponent,
           data: {
-            title: 'Contact - Details'
+            title: 'Contact | Q&A'
           }
       },
       // ^ Contact Me ^
       {
-          path: 'comments',
+          path: 'feedback',
           component: CommentComponent,
           data: {
-            title: 'Contact - Commissions'
+            title: 'Contact | Feedback'
           }
       }
       // ^ Commision Registration Page ^
     ]
-  },
-  {
-    path: 'faq',
-    component: QuestionComponent,
-    data: {
-      title: 'Q & A'
-    }
-  },
-  {
-    path: 'feedback',
-    component: CommentComponent,
-    data: {
-      title: 'Feedback / Queries'
-    }
   },
   {
     path: 'logs',
@@ -274,7 +257,7 @@ const routes: Routes = [
       title: 'Logs'
     }
   },
-  // ^ HomePage Stuff ^
+  // ^ B/V/Other -Logs ^
   {
     path:  '**',
     redirectTo:  '404',
@@ -284,7 +267,7 @@ const routes: Routes = [
     path: '404',
     component: NoneComponent,
     data: {
-      title: '404 - Page Not Found'
+      title: '404 | Page Not Found'
     }
   }
   // ^ 404 ^
