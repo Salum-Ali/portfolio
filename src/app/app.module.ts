@@ -91,6 +91,7 @@ import { PotentialPosterComponent } from './rout/resume/personal/fort/potential-
 import { RoverIntroTwonineteenComponent } from './rout/resume/personal/fort/rover-intro-twonineteen/rover-intro-twonineteen.component';
 import { RoverIntroTwoeighteenComponent } from './rout/resume/personal/fort/rover-intro-twoeighteen/rover-intro-twoeighteen.component';
 import { RoverAnualTwonineteenComponent } from './rout/resume/personal/fort/rover-anual-twonineteen/rover-anual-twonineteen.component';
+import { SociolinkComponent } from './unit/weblink/sociolink/sociolink.component';
 
 
 @NgModule({
@@ -149,6 +150,7 @@ import { RoverAnualTwonineteenComponent } from './rout/resume/personal/fort/rove
     RoverIntroTwonineteenComponent,
     RoverIntroTwoeighteenComponent,
     RoverAnualTwonineteenComponent,
+    SociolinkComponent,
   ],
   entryComponents: [
     OceanSunsetComponent,

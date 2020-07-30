@@ -22,6 +22,17 @@
   <div class="SubGrid MainItem" id="BodyWrap">
     <div class="SubItem" id="PageBlurb">
       <div id="BlurbSection">
+        <div id="CurrentRout">
+          <p>
+            Your Current Route&#58;<br>
+            {{location.path()}}
+          </p>
+          <div id="JumpNav">
+            <div class="TEST">
+              <app-backjump></app-backjump><app-forwardjump></app-forwardjump>
+            </div>
+          </div>
+        </div>
         <app-mainblurb></app-mainblurb>
       </div>
     </div>
@@ -29,19 +40,7 @@
       <app-feednav></app-feednav>
     </aside>
     <main class="SubItem" id="RouterContent">
-      <div id="CurrentRout">
-        <p>
-          Your Current Route&#58;<br>
-          {{location.path()}}
-        </p>
-        <div id="JumpNav">
-          <div class="TEST">
-            <app-backjump></app-backjump>
-            <app-forwardjump></app-forwardjump>
-          </div>
-        </div>
-      </div>
-    <router-outlet></router-outlet>
+      <router-outlet></router-outlet>
     </main>
     <div  class="SubItem" id="HorAd">
       <app-adhorizontal></app-adhorizontal>

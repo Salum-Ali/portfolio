@@ -1,0 +1,43 @@
+
+// PageLayoutGrid
+.MainGrid
+{
+	&#PageWrap
+	{
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-row-gap: 0em;
+		grid-auto-rows: auto;
+		#HeaderWrap
+		{
+			grid-column: 1/13;
+		}
+		#BodyWrap
+		{
+			display: grid;
+			grid-template-columns: repeat(10, 1fr);
+			grid-column: 1/13;
+			#PageBlurb
+			{
+				grid-column: 1/11;
+			}
+			#FeedNav
+			{
+				grid-column: 1/4;
+			}
+			#RouterContent
+			{
+				grid-column: 4/11;
+			}
+			#HorAd
+			{
+				grid-column: 1/11;
+			}
+		}
+		#FooterWrap
+		{
+			grid-column: 1/13;
+		}
+	}
+
+}
