@@ -54,6 +54,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 // Others
 // Import ngx-twitter-timeline (Twitter Feed Widget)
@@ -187,6 +188,7 @@ import { SociolinkComponent } from './unit/weblink/sociolink/sociolink.component
     NgxTwitterTimelineModule,
     MatTabsModule,
     MatGridListModule,
+    MatTooltipModule,
     // FlexLayoutModule
     FormsModule,
     ReactiveFormsModule,
