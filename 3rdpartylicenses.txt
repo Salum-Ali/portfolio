@@ -93,6 +93,8 @@ THE SOFTWARE.
 
 @angular/material/tabs
 
+@angular/material/tooltip
+
 @angular/platform-browser
 MIT
 
