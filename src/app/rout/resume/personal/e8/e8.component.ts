@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MatDialog} from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 // ^ This has to be in the same component as the Modal Button? ^
 import {OceanSunsetComponent} from './ocean-sunset/ocean-sunset.component';
 import { ChessSocZeroComponent } from './chess-soc-zero/chess-soc-zero.component';

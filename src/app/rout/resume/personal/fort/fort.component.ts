@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MatDialog} from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 // ^ This has to be in the same component as the Modal Button? ^
 import { IslamLogoNeoComponent } from './islam-logo-neo/islam-logo-neo.component';
 import { RoverLogoOneComponent } from './rover-logo-one/rover-logo-one.component';
