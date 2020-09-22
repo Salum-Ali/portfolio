@@ -31,9 +31,7 @@
               "src/custom-theme.scss",
               "src/styles.sass"
             ],
-            "scripts": [
-
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -132,5 +130,8 @@
       }
     }
   },
-  "defaultProject": "portfolio-website"
+  "defaultProject": "portfolio-website",
+  "cli": {
+    "analytics": "d328228e-da19-45fb-81fb-6e1cd77020e1"
+  }
 }
