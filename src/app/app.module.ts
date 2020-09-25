@@ -1,7 +1,10 @@
+// Angular-Stuff
 import { AdsenseModule } from 'ng2-adsense';
+// ^ Google Adsense? ^
 
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -65,7 +68,8 @@ import { AdspaceComponent } from './section/adspace/adspace.component';
 import { AdverticalComponent } from './section/adspace/advertical/advertical.component';
 import { AdhorizontalComponent } from './section/adspace/adhorizontal/adhorizontal.component';
 // import { FlexLayoutModule } from '@angular/flex-layout';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { StudyComponent } from './rout/resume/personal/study/study.component';
 import { JamComponent } from './rout/resume/personal/jam/jam.component';
@@ -93,6 +97,8 @@ import { RoverIntroTwonineteenComponent } from './rout/resume/personal/fort/rove
 import { RoverIntroTwoeighteenComponent } from './rout/resume/personal/fort/rover-intro-twoeighteen/rover-intro-twoeighteen.component';
 import { RoverAnualTwonineteenComponent } from './rout/resume/personal/fort/rover-anual-twonineteen/rover-anual-twonineteen.component';
 import { SociolinkComponent } from './unit/weblink/sociolink/sociolink.component';
+
+import { ContactService } from './contact.service';
 
 
 @NgModule({
@@ -175,6 +181,7 @@ import { SociolinkComponent } from './unit/weblink/sociolink/sociolink.component
     // ^ This Probably will work ^
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatMenuModule,
@@ -194,7 +201,8 @@ import { SociolinkComponent } from './unit/weblink/sociolink/sociolink.component
     ReactiveFormsModule,
   ],
   providers: [
-    Title
+    Title,
+    ContactService
   ],
   bootstrap: [AppComponent]
 })
