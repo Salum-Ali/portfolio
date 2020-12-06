@@ -99,12 +99,20 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 		{
 			text-align: left;
 			font-size: x-large;
-			list-style: none;
+			// list-style: none;
 			// margin: 0;
 			// padding: 0;
 			&.SubList
 			{
 				margin: 1em;
+			}
+			&#GameJam
+			{
+				list-style-type: circle;
+			}
+			&#SocioFeed
+			{
+				list-style-type: none;
 			}
 		}
 		a

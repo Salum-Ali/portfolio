@@ -5,7 +5,7 @@
     <div id="PageTitles">
         <h1 id="SiteTitle">
           <!-- {{title}} -->
-          Salum Muhammed
+          Salum Ali Muhammed
         </h1>
         <h1>
           Creative Semi-Intermediate
@@ -39,9 +39,12 @@
     <aside class="SubItem" id="FeedNav">
       <app-feednav></app-feednav>
     </aside>
-    <main class="SubItem" id="RouterContent">
-      <router-outlet></router-outlet>
+    <main [@routeAnimation]="prepareRoute(outlet)" class="SubItem" id="RouterContent">
+      <router-outlet #outlet="outlet"></router-outlet>
     </main>
+    <!-- <main class="SubItem" id="RouterContent">
+      <router-outlet></router-outlet>
+    </main> -->
     <div  class="SubItem" id="HorAd">
       <app-adhorizontal></app-adhorizontal>
     </div>

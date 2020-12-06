@@ -91,7 +91,7 @@ const routes: Routes = [
           path: 'skillz',
           component: SkillzComponent,
           data: {
-            title: 'About | Workable Skills'
+            title: 'About | Skills and Experiences'
           }
       },
       {

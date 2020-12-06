@@ -1,19 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
+import { ActivatedRoute, Router, NavigationEnd, RouterOutlet } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { filter, map } from 'rxjs/operators';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
 // import {MatDialog} from '@angular/material';
 // import { trigger, state, style, transition, animate, group } from '@angular/animations';
 // ^ import fade in animation ^
 import { FormGroup, FormBuilder } from '@angular/forms';
 // ^ NTS: Fix This At Some Point ^
+// import {transition, trigger, query, style, animate, group, animateChild} from '@angular/animations';
+// import { fadeAnimation } from './animations';
+// import { slider, transformer, fader, stepper } from './animations';
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-
     styleUrls: ['./app.component.sass'],
-    providers: [Location, {provide: LocationStrategy, useClass: PathLocationStrategy}]
+
+    providers: [Location, {provide: LocationStrategy, useClass: PathLocationStrategy}],
+
+    animations: [
+        // fadeAnimation,
+        // style
+        // fader
+    ]
+    // register the animations
 
 })
 export class AppComponent implements OnInit {
@@ -28,8 +39,9 @@ export class AppComponent implements OnInit {
         private titleService: Title,
         public location: Location,
         // public dialog: MatDialog,
-        private formBuilder: FormBuilder
+        private formBuilder: FormBuilder,
         // ^ Not Necicary - I just don't like linting errors ^
+        private http: HttpClient
         ) {
         this.router.events.pipe(
             filter(event => event instanceof NavigationEnd),
@@ -52,6 +64,10 @@ export class AppComponent implements OnInit {
             }
         });
     }
+
+    prepareRoute(outlet: RouterOutlet) {
+        return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
+      }
 
     ngOnInit() {
         // this.href = this.router.url;

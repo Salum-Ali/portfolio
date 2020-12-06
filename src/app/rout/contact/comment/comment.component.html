@@ -17,34 +17,60 @@
 	});
 	</script> -->
 
-<h1	>
+<h1>
 	Feedback Form - Currently Work In Progress
 </h1>
+<form action="https://formkeep.com/f/a356929d63bc" accept-charset="UTF-8" enctype="multipart/form-data" method="POST">
 
-<!-- <section class="section">
-	<div class="container contact"> -->
+    <label for="name"> What is your name?</label>
+    <input type="text" name="name"> <br>
+    <label for="email"> What is your email address?</label>
+    <input type="email" name="email">
+    <button type="submit">Send</button>
+</form>
+
+
+<script src='https://www.google.com/recaptcha/api.js' async defer></script>
+<form action="https://formkeep.com/f/a356929d63bc"
+      accept-charset="UTF-8"
+      enctype="multipart/form-data"
+      method="POST">
+  <input type="hidden" name="utf8" value="✓">
+
+  <label for="email-address">Email Address</label>
+  <input type="email" id="email-address" name="email">
+
+  <label for="photo-album">Photos</label>
+  <input type="file" id="photo-album" multiple name="photos[]">
+
+  <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+
+  <button type="submit">Submit</button>
+</form>
+<!-- <section class="section"> -->
+	<!-- <div class="container contact"> -->
 		<!-- form goes here -->
-		<!-- <form (ngSubmit)="processForm()" class="contact"> -->
+		<!-- <form class="contact" action="https://getform.io/f/716c191f-ed04-4ed1-a517-684f64034ffc" method="POST"> -->
 			<!-- name -->
-			<!-- <div class="field">
-				<input type="text" name="name" class="input" placeholder="What's Your Name?" [(ngModel)]="name">
-			</div> -->
+			<!-- <div class="field"> -->
+				<!-- <input type="text" name="name" class="input" placeholder="What's Your Name?" [(ngModel)]="name"> -->
+			<!-- </div> -->
 			<!-- email -->
-			<!-- <div class="field">
-				<input type="email" name="email" class="input" placeholder="What's Your Email?" [(ngModel)]="email">
-			</div> -->
+			<!-- <div class="field"> -->
+				<!-- <input type="email" name="email" class="input" placeholder="What's Your Email?" [(ngModel)]="email"> -->
+			<!-- </div> -->
 			<!-- message -->
-			<!-- <div class="field">
-				<textarea class="textarea" name="message" placeholder="What's on your mind?" [(ngModel)]="message"></textarea>
-			</div> -->
-			<!-- <button type="submit" class="button is-danger is-large">
-				Submit
-			</button> -->
+			<!-- <div class="field"> -->
+				<!-- <textarea class="textarea" name="message" placeholder="What's on your mind?" [(ngModel)]="message"></textarea> -->
+			<!-- </div> -->
+			<!-- <button type="submit" class="button is-danger is-large"> -->
+				<!-- Submit -->
+			<!-- </button> -->
 		<!-- </form> -->
 	<!-- </div> -->
 <!-- </section> -->
 
-<div class="wrapper-box">
+<!-- <div class="wrapper-box">
 	<div class="container">
 	  <h2 class="text-center mb-5">Angular Contact Form Hosted On FireBase</h2>
 	  <div class="row">
@@ -95,43 +121,4 @@
 		</div>
 	  </div>
 	</div>
-  </div>
-
-<div class="container">
-	<h2 class="text-center mb-5">
-		Contact Form
-	</h2>
-	<div class="row" style="text-align: left">
-		<div class="col-md-6 offset-md-3">
-			<form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)" action="https://mailthis.to/salumalimuhammed@gmail">
-				<div class="form-group">
-					<label for="Email">
-						Email
-					</label>
-					<input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter email"formControlName="Email">
-					<small id="emailHelp" class="form-text text-muted">
-						We'll never share your email with anyone else.
-					</small>
-				</div>
-				<div class="form-group">
-					<label for="fullname">
-						Full Name
-					</label>
-					<input type="text" class="form-control" name="Fullname" placeholder="Full Name" formControlName="Fullname">
-				</div>
-				<div class="form-group">
-					<label for="comment">
-						Comment
-					</label>
-					<textarea class="form-control" formControlName="Comment" name="Comment"></textarea>
-				</div>
-				<button type="submit" class="btn btn-primary" [disabled]="!FormData.valid">Submit</button>
-			</form>
-		</div>
-	</div>
-</div>
-
-<!-- <label style="background-color: #000;;">
-	Name:
-	<input type="text" [formControl]="name">
-</label> -->
+  </div> -->

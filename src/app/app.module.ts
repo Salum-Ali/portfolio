@@ -58,6 +58,10 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatChipsModule} from '@angular/material/chips';
 
 // Others
 // Import ngx-twitter-timeline (Twitter Feed Widget)
@@ -199,6 +203,10 @@ import { ContactService } from './contact.service';
     // FlexLayoutModule
     FormsModule,
     ReactiveFormsModule,
+    MatSelectModule,
+    MatChipsModule,
+    MatCheckboxModule,
+    MatInputModule,
   ],
   providers: [
     Title,
