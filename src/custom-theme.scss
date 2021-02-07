@@ -39,7 +39,6 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 *
 {
 	// common styles
-	// transition: all 0.5s ease-in-out;
 	color: white;
 	// Elements
 	body
@@ -95,7 +94,7 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 		// {
 		// 	color: rgb(200, 200, 200);
 		// }
-		ul, li
+		ul
 		{
 			text-align: left;
 			font-size: x-large;
@@ -109,6 +108,10 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 			&#GameJam
 			{
 				list-style-type: circle;
+				li
+				{
+					margin: 1em;
+				}
 			}
 			&#SocioFeed
 			{
