@@ -39,7 +39,7 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 *
 {
 	// common styles
-	color: white;
+	color: rgba($color: #eee, $alpha: .95);
 	// Elements
 	body
 	{
@@ -121,6 +121,23 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 		a
 		{
 			color: yellow;
+			text-decoration: none;
+			background-color: rgba($color: #000000, $alpha: .5);
+			&:hover
+			{
+				color: red;
+				text-decoration: underline;
+			}
+			// &:visited
+			// {
+			// 	color: green;
+			// 	text-decoration: none;
+			// }
+			// ^ NTS: Visited Styles To Be Tweaked ^
+			&:active
+			{
+				text-decoration: underline;
+			}
 		}
 		span
 		{
@@ -226,6 +243,14 @@ $portfolio-website-theme: mat-light-theme($portfolio-website-primary, $portfolio
 			{
 				width: 50%;
 				background-color: rgba($color: #000000, $alpha: 1.0);
+			}
+		}
+		button
+		{
+			color: black;
+			h1, h2, h3, h4, h5, h6
+			{
+				color: black;
 			}
 		}
 		// Miscelaneouse
