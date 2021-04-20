@@ -10,6 +10,7 @@ export class FeednavComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
   }
+
   ngAfterViewInit() {
 
     // Tweets
