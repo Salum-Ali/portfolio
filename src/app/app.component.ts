@@ -60,7 +60,7 @@ export class AppComponent implements OnInit {
             })
         ).subscribe( (data: any) => {
             if (data) {
-                this.titleService.setTitle(data + ' - SalumAli.ME');
+                this.titleService.setTitle(data + ' | SalumAli.ME');
             }
         });
     }

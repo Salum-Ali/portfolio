@@ -6,15 +6,21 @@ import { Routes, RouterModule } from '@angular/router';
 // Main
 import { HomeComponent } from './rout/home/home.component';
 import { NoneComponent } from './rout/none/none.component';
-
 // About
 import { AboutComponent } from './rout/about/about.component';
 import { MeComponent } from './rout/about/me/me.component';
 import { SkillzComponent } from './rout/about/skillz/skillz.component';
 import { SiteComponent } from './rout/about/site/site.component';
-
 // CV
 import { ResumeComponent } from './rout/resume/resume.component';
+
+// Completed Projects
+import { CompleteComponent } from './rout/resume/complete/complete.component';
+// import { GameComponent } from './rout/resume/complete/game/game.component';
+// WIP
+import { CurrentComponent } from './rout/resume/current/current.component';
+// Archived Projects
+import { ChronicleComponent } from './rout/resume/chronicle/chronicle.component';
 
 // Personal Portfolio
 import { PersonalComponent } from './rout/resume/personal/personal.component';
@@ -25,13 +31,9 @@ import { E8Component } from './rout/resume/personal/e8/e8.component';
 
 // Professional Portfolio
 import { ProfessionalComponent } from './rout/resume/professional/professional.component';
-// 3D Work
 import { ScriptingComponent } from './rout/resume/professional/scripting/scripting.component';
-// Animation
 import { AnimationComponent } from './rout/resume/professional/animation/animation.component';
-// Texturing
 import { TexturingComponent } from './rout/resume/professional/texturing/texturing.component';
-// Scripting
 import { ModelingComponent } from './rout/resume/professional/modeling/modeling.component';
 
 // Pedagogy Portfolio
@@ -39,7 +41,7 @@ import { PedagogyComponent } from './rout/resume/pedagogy/pedagogy.component';
 
 // Contact
 import { ContactComponent } from './rout/contact/contact.component';
-import { CommmissionComponent } from './rout/shop/commmission/commmission.component';
+// import { CommmissionComponent } from './rout/shop/commmission/commmission.component';
 import { ConnectComponent } from './rout/contact/connect/connect.component';
 
 // FAQ
@@ -50,6 +52,7 @@ import { CommentComponent } from './rout/contact/comment/comment.component';
 
 // Logs
 import { LogComponent } from './rout/log/log.component';
+import { BackgroundComponent } from './rout/resume/complete/background/background.component';
 
 
 // Ignore For Now
@@ -63,6 +66,7 @@ const routes: Routes = [
   redirectTo:  'home',
   pathMatch:  'full'
   },
+  // ^ HeadEmpty, NoRoute ^
   {
     path: 'home',
     component: HomeComponent,
@@ -110,52 +114,88 @@ const routes: Routes = [
     children: [
       {
           path: '',
-          redirectTo: 'professional',
+          redirectTo: 'completed',
           pathMatch: 'full'
       },
       {
-        path: 'professional',
-        component: ProfessionalComponent,
-        children: [
-        {
-          path: '',
-          redirectTo: 'modeling',
-          pathMatch: 'full'
+        path: 'completed',
+        component: CompleteComponent,
+        data: {
+          title: 'Projects | Completed'
         },
+        children: [
           {
-            path: 'modeling',
-            component: ModelingComponent,
-            data: {
-              title: 'Professional Works | 3D Modeling '
-            }
+            path: '',
+            redirectTo: 'backgrounds',
+            pathMatch: 'full'
           },
-          // ^ 3D Modelling & Sculpting ^
           {
-            path: 'animation',
-            component: AnimationComponent,
+            path: 'backgrounds',
+            component: BackgroundComponent,
             data: {
-              title: 'Professional Works | Animation'
+              title: 'Completed Projects | Background & Environment Art'
             }
-          },
-          // ^ Animations ^
-          {
-            path: 'art',
-            component: TexturingComponent,
-            data: {
-              title: 'Professional Works | 2D Arts'
-            }
-          },
-          // ^ 2D Arts inc. Logos ^
-          {
-            path: 'coding',
-            component: ScriptingComponent,
-            data: {
-              title: 'Professional Works | Programming'
-            }
-          },
-          // ^ Anything Programming Related ^
+          }
         ]
       },
+      // ^ Completed Works ^
+      {
+        path: 'ongoing',
+        component: CurrentComponent,
+        data: {
+          title: 'Projects | Ongoing'
+        }
+      },
+      {
+        path: 'archived',
+        component: ChronicleComponent,
+        data: {
+          title: 'Projects | Archived'
+        }
+      },
+      // {
+      //   path: 'professional',
+      //   component: ProfessionalComponent,
+      //   children: [
+      //   {
+      //     path: '',
+      //     redirectTo: 'modeling',
+      //     pathMatch: 'full'
+      //   },
+      //     {
+      //       path: 'modeling',
+      //       component: ModelingComponent,
+      //       data: {
+      //         title: 'Professional Works | 3D Modeling '
+      //       }
+      //     },
+      //     // ^ 3D Modelling & Sculpting ^
+      //     {
+      //       path: 'animation',
+      //       component: AnimationComponent,
+      //       data: {
+      //         title: 'Professional Works | Animation'
+      //       }
+      //     },
+      //     // ^ Animations ^
+      //     {
+      //       path: 'art',
+      //       component: TexturingComponent,
+      //       data: {
+      //         title: 'Professional Works | 2D Arts'
+      //       }
+      //     },
+      //     // ^ 2D Arts inc. Logos ^
+      //     {
+      //       path: 'coding',
+      //       component: ScriptingComponent,
+      //       data: {
+      //         title: 'Professional Works | Programming'
+      //       }
+      //     },
+      //     // ^ Anything Programming Related ^
+      //   ]
+      // },
       // ^ Professional Works ^
       {
         path: 'personal',

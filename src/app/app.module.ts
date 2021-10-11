@@ -85,7 +85,7 @@ import { CreditComponent } from './unit/pagenav/footnav/credit/credit.component'
 import { MottoComponent } from './unit/pagenav/footnav/motto/motto.component';
 import { ShopComponent } from './rout/shop/shop.component';
 import { StoreComponent } from './rout/shop/store/store.component';
-import { PosterComponent } from './rout/resume/professional/texturing/poster/poster.component';
+// import { PosterComponent } from './rout/resume/professional/texturing/poster/poster.component';
 import { LogComponent } from './rout/log/log.component';
 
 import { ChessSocZeroComponent } from './rout/resume/personal/e8/chess-soc-zero/chess-soc-zero.component';
@@ -103,6 +103,19 @@ import { RoverAnualTwonineteenComponent } from './rout/resume/personal/fort/rove
 import { SociolinkComponent } from './unit/weblink/sociolink/sociolink.component';
 
 import { ContactService } from './contact.service';
+
+import { ChronicleComponent } from './rout/resume/chronicle/chronicle.component';
+import { CompleteComponent } from './rout/resume/complete/complete.component';
+import { CurrentComponent } from './rout/resume/current/current.component';
+
+
+import { LogoComponent } from './rout/resume/complete/logo/logo.component';
+import { ArchitectureComponent } from './rout/resume/complete/architecture/architecture.component';
+import { PropComponent } from './rout/resume/complete/prop/prop.component';
+import { TextureComponent } from './rout/resume/complete/texture/texture.component';
+import { BackgroundComponent } from './rout/resume/complete/background/background.component';
+import { GameComponent } from './rout/resume/complete/game/game.component';
+import { PosterComponent } from './rout/resume/complete/poster/poster.component';
 
 
 @NgModule({
@@ -162,6 +175,17 @@ import { ContactService } from './contact.service';
     RoverIntroTwoeighteenComponent,
     RoverAnualTwonineteenComponent,
     SociolinkComponent,
+    ChronicleComponent,
+    CompleteComponent,
+    CurrentComponent,
+    // GameComponent,
+    // EnvironmentComponent,
+    LogoComponent,
+    ArchitectureComponent,
+    PropComponent,
+    TextureComponent,
+    BackgroundComponent,
+    GameComponent
   ],
   entryComponents: [
     OceanSunsetComponent,

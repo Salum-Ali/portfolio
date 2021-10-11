@@ -23,15 +23,24 @@
 			<img src="https://img.icons8.com/material-two-tone/24/000000/group-of-projects.png">
 			Projects
 			<mat-menu #ProjectPage="matMenu" xPosition="after">
-				<button class="dropdown-item" mat-menu-item routerLink="projects/professional" disabled>
-					Professional Works
+				<button class="dropdown-items" mat-menu-item routerLink="projects/completed">
+					Complete
 				</button>
+				<button class="dropdown-items" mat-menu-item routerLink="projects/ongoing" disabled>
+					Ongoing
+				</button>
+				<button class="dropdown-items" mat-menu-item routerLink="projects/archived" disabled>
+					Archived
+				</button>
+				<button class="dropdown-item" mat-menu-item routerLink="projects/pedagogy" disabled>
+					Studies
+				</button>
+				<!-- <button class="dropdown-item" mat-menu-item routerLink="projects/professional" disabled>
+					Professional Works
+				</button> -->
 				<button class="dropdown-item" mat-menu-item routerLink="projects/personal">
 					Personal Bests
 				</button>
-				<!-- <button class="dropdown-item" mat-menu-item routerLink="projects/pedagogy">
-					Learning Points
-				</button> -->
 			</mat-menu>
 		</button>
 		<button class="HornavButton" mat-button [matMenuTriggerFor]="ContactPage">
