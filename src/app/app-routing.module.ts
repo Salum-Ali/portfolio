@@ -14,9 +14,17 @@ import { SiteComponent } from './rout/about/site/site.component';
 // CV
 import { ResumeComponent } from './rout/resume/resume.component';
 
+// Project Compendium
+import { BackgroundComponent } from './rout/resume/compendium/background/background.component';
+import { JamComponent } from './rout/resume/compendium/jam/jam.component';
+import { LogoComponent } from './rout/resume/compendium/logo/logo.component';
+import { PosterComponent } from './rout/resume/compendium/poster/poster.component';
+import { TextureComponent } from './rout/resume/compendium/texture/texture.component';
+import { GameComponent } from './rout/resume/compendium/game/game.component';
+
+
 // Completed Projects
 import { CompleteComponent } from './rout/resume/complete/complete.component';
-// import { GameComponent } from './rout/resume/complete/game/game.component';
 // WIP
 import { CurrentComponent } from './rout/resume/current/current.component';
 // Archived Projects
@@ -24,7 +32,6 @@ import { ChronicleComponent } from './rout/resume/chronicle/chronicle.component'
 
 // Personal Portfolio
 import { PersonalComponent } from './rout/resume/personal/personal.component';
-import { JamComponent } from './rout/resume/personal/jam/jam.component';
 import { HindsightComponent } from './rout/resume/personal/hindsight/hindsight.component';
 import { FortComponent } from './rout/resume/personal/fort/fort.component';
 import { E8Component } from './rout/resume/personal/e8/e8.component';
@@ -52,7 +59,6 @@ import { CommentComponent } from './rout/contact/comment/comment.component';
 
 // Logs
 import { LogComponent } from './rout/log/log.component';
-import { BackgroundComponent } from './rout/resume/complete/background/background.component';
 
 
 // Ignore For Now
@@ -133,7 +139,42 @@ const routes: Routes = [
             path: 'backgrounds',
             component: BackgroundComponent,
             data: {
-              title: 'Completed Projects | Background & Environment Art'
+              title: 'Projects | Completed | Background & Environment Art'
+            }
+          },
+          {
+            path: 'jams',
+            component: JamComponent,
+            data: {
+              title: 'Projects | Completed | Game Jams'
+            }
+          },
+          {
+            path: 'logos',
+            component: LogoComponent,
+            data: {
+              title: 'Projects | Completed | Logo Design'
+            }
+          },
+          {
+            path: 'games',
+            component: GameComponent,
+            data: {
+              title: 'Projects | Completed | Personl Game Projects'
+            }
+          },
+          {
+            path: 'posters',
+            component: PosterComponent,
+            data: {
+              title: 'Project | Completed | Posters'
+            }
+          },
+          {
+            path: 'textures',
+            component: TextureComponent,
+            data: {
+              title: 'Project | Completed | Textures'
             }
           }
         ]
@@ -144,14 +185,112 @@ const routes: Routes = [
         component: CurrentComponent,
         data: {
           title: 'Projects | Ongoing'
-        }
+        },
+        children: [
+          {
+            path: '',
+            redirectTo: 'backgrounds',
+            pathMatch: 'full'
+          },
+          {
+            path: 'backgrounds',
+            component: BackgroundComponent,
+            data: {
+              title: 'Projects | Completed | Background & Environment Art'
+            }
+          },
+          {
+            path: 'jams',
+            component: JamComponent,
+            data: {
+              title: 'Projects | Completed | Game Jams'
+            }
+          },
+          {
+            path: 'logos',
+            component: LogoComponent,
+            data: {
+              title: 'Projects | Completed | Logo Design'
+            }
+          },
+          {
+            path: 'games',
+            component: GameComponent,
+            data: {
+              title: 'Projects | Completed | Personl Game Projects'
+            }
+          },
+          {
+            path: 'posters',
+            component: PosterComponent,
+            data: {
+              title: 'Project | Completed | Posters'
+            }
+          },
+          {
+            path: 'textures',
+            component: TextureComponent,
+            data: {
+              title: 'Project | Completed | Textures'
+            }
+          }
+        ]
       },
       {
         path: 'archived',
         component: ChronicleComponent,
         data: {
           title: 'Projects | Archived'
-        }
+        },
+        children: [
+          {
+            path: '',
+            redirectTo: 'backgrounds',
+            pathMatch: 'full'
+          },
+          {
+            path: 'backgrounds',
+            component: BackgroundComponent,
+            data: {
+              title: 'Projects | Completed | Background & Environment Art'
+            }
+          },
+          {
+            path: 'jams',
+            component: JamComponent,
+            data: {
+              title: 'Projects | Completed | Game Jams'
+            }
+          },
+          {
+            path: 'logos',
+            component: LogoComponent,
+            data: {
+              title: 'Projects | Completed | Logo Design'
+            }
+          },
+          {
+            path: 'games',
+            component: GameComponent,
+            data: {
+              title: 'Projects | Completed | Personl Game Projects'
+            }
+          },
+          {
+            path: 'posters',
+            component: PosterComponent,
+            data: {
+              title: 'Project | Completed | Posters'
+            }
+          },
+          {
+            path: 'textures',
+            component: TextureComponent,
+            data: {
+              title: 'Project | Completed | Textures'
+            }
+          }
+        ]
       },
       // {
       //   path: 'professional',
@@ -202,46 +341,46 @@ const routes: Routes = [
         component: PersonalComponent,
         data: {
           title: 'Projects - Personal'
-        },
-        children: [
-        {
-          path: '',
-          redirectTo: 'jams',
-          pathMatch: 'full'
-        },
-          {
-            path: 'jams',
-            component: JamComponent,
-            data: {
-              title: 'Personal Bests - Game Jams'
-            }
-          },
-          // ^ Game and Other Jams ^
-          {
-            path: 'hindsight',
-            component: HindsightComponent,
-            data: {
-              title: 'Personal Bests - Project: HindSight'
-            }
-          },
-          // ^ Project HindSight - 2020 ^
-          {
-            path: 'fourty-art-hour-weekends',
-            component: FortComponent,
-            data: {
-              title: 'Personal Bests - FAWH'
-            }
-          },
-          // ^ Fourty-Art-Hour Weekends - 2019 ^
-          {
-            path: 'environment-eight',
-            component: E8Component,
-            data: {
-              title: 'Personal Bests - Environment Eight'
-            }
-          },
-          // ^ Environment Eight - May->December 2018 ^
-        ]
+        }
+        // children: [
+        // {
+        //   path: '',
+        //   redirectTo: 'jams',
+        //   pathMatch: 'full'
+        // },
+        //   {
+        //     path: 'jams',
+        //     component: JamComponent,
+        //     data: {
+        //       title: 'Personal Bests - Game Jams'
+        //     }
+        //   },
+        //   // ^ Game and Other Jams ^
+        //   {
+        //     path: 'hindsight',
+        //     component: HindsightComponent,
+        //     data: {
+        //       title: 'Personal Bests - Project: HindSight'
+        //     }
+        //   },
+        //   // ^ Project HindSight - 2020 ^
+        //   {
+        //     path: 'fourty-art-hour-weekends',
+        //     component: FortComponent,
+        //     data: {
+        //       title: 'Personal Bests - FAWH'
+        //     }
+        //   },
+        //   // ^ Fourty-Art-Hour Weekends - 2019 ^
+        //   {
+        //     path: 'environment-eight',
+        //     component: E8Component,
+        //     data: {
+        //       title: 'Personal Bests - Environment Eight'
+        //     }
+        //   },
+        //   // ^ Environment Eight - May->December 2018 ^
+        // ]
       },
       // ^ Personal Bestss ^
       {

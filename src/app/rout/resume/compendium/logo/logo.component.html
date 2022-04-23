@@ -1,0 +1,70 @@
+<!-- <p>logo works!</p> -->
+
+<div class="completed" *ngIf="hasRoute('completed')">
+	<hr>
+	<h1>
+		Fourty-Art-Hour-Weekends
+	</h1>
+	<div class="GalleryGrid LoGo" id="FortyArt">
+		<div class="GalleryContainer FourtyArt">
+			<img class="GridPic" src="./assets/Projects/FAHW/M1P3/LandScape/FAHW-1P3-TUDTC-IslamSoc-NewLogo-LS.jpg" alt="Fourty-Art-Hour-Weekends - 1.1">
+			<div class="GridOverlay">
+				<button (click)="FortOne()">
+					<span class="text">
+						FAHW 1.1 - TU Dublin Tallaght ISOC Logo
+					</span>
+				</button>
+			</div>
+		</div>
+		<div class="GalleryContainer FourtyArt">
+			<img class="GridPic" src="./assets/Projects/FAHW/M2P1/FAHW-2P1-TUD-TC-RoSoc-LogoOne.jpg" alt="Fourty-Art-Hour-Weekends - 2.1">
+			<div class="GridOverlay">
+				<button (click)="FortFive()">
+					<span class="text">
+						FAHW 2.1 - TU Dublin Tallaght Rover Society Logo 1
+					</span>
+				</button>
+			</div>
+		</div>
+		<div class="GalleryContainer FourtyArt">
+			<img class="GridPic" src="./assets/Projects/FAHW/M8P2/FAHW-8P2-TUD-TC-RovSoc-NewLogo-PixPerf.jpg" alt="Fourty-Art-Hour-Weekends - 8.2">
+			<div class="GridOverlay">
+				<button (click)="FortThirty()">
+					<span class="text">
+						FAHW 8.2 - TU Dublin Tallaght Rover Society Logo 2
+					</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<h1>
+		Environment Eight
+	</h1>
+	<div class="GalleryGrid LoGo" id="EnvEight">
+		<div class="GalleryContainer EnvEight">
+			<img class="GridPic" src="./assets/Projects/EnvEight/_E8_ITT-CS_LGO_0-1-0-2-0.jpg" alt="Environment Eight - 2">
+			<div class="GridOverlay">
+				<button (click)="EnvightTwo()">
+					<span class="text">
+						Environment Eight 2 - ITT Chess Society Logo 0
+					</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<hr>
+</div>
+
+<div class="ongoing" *ngIf="hasRoute('ongoing')">
+	<p>
+		Ongoing projects will go here. check back later for more progress
+	</p>
+</div>
+<div class="archived" *ngIf="hasRoute('archived')">
+	<p>
+		Archived projects will go here. check back later for more progress
+	</p>
+</div>
+
+

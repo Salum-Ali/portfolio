@@ -1,0 +1,56 @@
+<!-- <p>
+
+</p> -->
+
+<div class="completed" *ngIf="hasRoute('completed')">
+	<hr>
+	<h1>
+		Fourty-Art-Hour-Weekends
+	</h1>
+	<div class="GalleryGrid Poster" id="FortyArt">
+		<div class="GalleryContainer FourtyArt">
+			<img class="GridPic" src="./assets/Projects/FAHW/M8P3/FAHW-8P3-TUD-TC-RovSoc-AGM-1920-HalfStalk.jpg" alt="Fourty-Art-Hour-Weekends - 8.3">
+			<div class="GridOverlay">
+				<button (click)="FortThirtyone()">
+					<span class="text">
+						FAHW 8.3 - Rover Society AGM Poster 2019
+					</span>
+				</button>
+			</div>
+		</div>
+		<div class="GalleryContainer FourtyArt">
+			<img class="GridPic" src="./assets/Projects/FAHW/M8P1/FAHW-8P1-TUD-TC-RovSoc-Intro-1920-PlusOverLay.jpg" alt="Fourty-Art-Hour-Weekends - 8.1">
+			<div class="GridOverlay">
+				<button (click)="FortTwentynine()">
+					<span class="text">
+						FAHW 8.1 - Rover Society Intro Poster 2019
+					</span>
+				</button>
+			</div>
+		</div>
+		<div class="GalleryContainer FortyArt">
+			<img class="GridPic" src="./assets/Projects/FAHW/M2P2/FAHW-2P2-TUD-TC-RovSoc-IntroPoster-PreBICS-1819-PlaceFour.jpg" alt="Fourty-Art-Hour-Weekends - 2.2">
+			<div class="GridOverlay">
+				<button (click)="FortSix()">
+					<span class="text">
+						FAHW 2.2 - Rover Society Intro Poster 2018
+					</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<hr>
+</div>
+
+<div class="ongoing" *ngIf="hasRoute('ongoing')">
+	<p>
+		Ongoing projects will go here. check back later for more progress
+	</p>
+</div>
+
+<div class="archived" *ngIf="hasRoute('archived')">
+	<p>
+		Archived projects will go here. check back later for more progress
+	</p>
+</div>
+

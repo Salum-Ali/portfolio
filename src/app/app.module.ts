@@ -62,6 +62,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatTableModule} from '@angular/material/table';
+
 
 // Others
 // Import ngx-twitter-timeline (Twitter Feed Widget)
@@ -76,7 +78,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { StudyComponent } from './rout/resume/personal/study/study.component';
-import { JamComponent } from './rout/resume/personal/jam/jam.component';
+import { JamComponent } from './rout/resume/compendium/jam/jam.component';
 import { HindsightComponent } from './rout/resume/personal/hindsight/hindsight.component';
 import { E8Component } from './rout/resume/personal/e8/e8.component';
 import { FortComponent } from './rout/resume/personal/fort/fort.component';
@@ -88,18 +90,18 @@ import { StoreComponent } from './rout/shop/store/store.component';
 // import { PosterComponent } from './rout/resume/professional/texturing/poster/poster.component';
 import { LogComponent } from './rout/log/log.component';
 
-import { ChessSocZeroComponent } from './rout/resume/personal/e8/chess-soc-zero/chess-soc-zero.component';
-import { OceanSunsetComponent } from './rout/resume/personal/e8/ocean-sunset/ocean-sunset.component';
-import { NightNebulaComponent } from './rout/resume/personal/e8/night-nebula/night-nebula.component';
-import { NorthernCloudsComponent } from './rout/resume/personal/e8/northern-clouds/northern-clouds.component';
-import { IslamLogoNeoComponent } from './rout/resume/personal/fort/islam-logo-neo/islam-logo-neo.component';
+import { ChessSocZeroComponent } from './rout/resume/compendium/logo/chess-soc-zero/chess-soc-zero.component';
+import { OceanSunsetComponent } from './rout/resume/compendium/background/ocean-sunset/ocean-sunset.component';
+import { NightNebulaComponent } from './rout/resume/compendium/background/night-nebula/night-nebula.component';
+import { NorthernCloudsComponent } from './rout/resume/compendium/background/northern-clouds/northern-clouds.component';
+import { IslamLogoNeoComponent } from './rout/resume/compendium/logo/islam-logo-neo/islam-logo-neo.component';
 import { IllustratorAssessmentComponent } from './rout/resume/personal/fort/illustrator-assessment/illustrator-assessment.component';
-import { RoverLogoOneComponent } from './rout/resume/personal/fort/rover-logo-one/rover-logo-one.component';
-import { RoverLogoTwoComponent } from './rout/resume/personal/fort/rover-logo-two/rover-logo-two.component';
-import { PotentialPosterComponent } from './rout/resume/personal/fort/potential-poster/potential-poster.component';
-import { RoverIntroTwonineteenComponent } from './rout/resume/personal/fort/rover-intro-twonineteen/rover-intro-twonineteen.component';
-import { RoverIntroTwoeighteenComponent } from './rout/resume/personal/fort/rover-intro-twoeighteen/rover-intro-twoeighteen.component';
-import { RoverAnualTwonineteenComponent } from './rout/resume/personal/fort/rover-anual-twonineteen/rover-anual-twonineteen.component';
+import { RoverLogoOneComponent } from './rout/resume/compendium/logo/rover-logo-one/rover-logo-one.component';
+import { RoverLogoTwoComponent } from './rout/resume/compendium/logo/rover-logo-two/rover-logo-two.component';
+import { PotentialPosterComponent } from './rout/resume/compendium/background/potential-poster/potential-poster.component';
+import { RoverIntroTwonineteenComponent } from './rout/resume/compendium/poster/rover-intro-twonineteen/rover-intro-twonineteen.component';
+import { RoverIntroTwoeighteenComponent } from './rout/resume/compendium/poster/rover-intro-twoeighteen/rover-intro-twoeighteen.component';
+import { RoverAnualTwonineteenComponent } from './rout/resume/compendium/poster/rover-anual-twonineteen/rover-anual-twonineteen.component';
 import { SociolinkComponent } from './unit/weblink/sociolink/sociolink.component';
 
 import { ContactService } from './contact.service';
@@ -109,13 +111,14 @@ import { CompleteComponent } from './rout/resume/complete/complete.component';
 import { CurrentComponent } from './rout/resume/current/current.component';
 
 
-import { LogoComponent } from './rout/resume/complete/logo/logo.component';
-import { ArchitectureComponent } from './rout/resume/complete/architecture/architecture.component';
-import { PropComponent } from './rout/resume/complete/prop/prop.component';
-import { TextureComponent } from './rout/resume/complete/texture/texture.component';
-import { BackgroundComponent } from './rout/resume/complete/background/background.component';
-import { GameComponent } from './rout/resume/complete/game/game.component';
-import { PosterComponent } from './rout/resume/complete/poster/poster.component';
+import { LogoComponent } from './rout/resume/compendium/logo/logo.component';
+import { ArchitectureComponent } from './rout/resume/compendium/architecture/architecture.component';
+import { PropComponent } from './rout/resume/compendium/prop/prop.component';
+import { TextureComponent } from './rout/resume/compendium/texture/texture.component';
+import { BackgroundComponent } from './rout/resume/compendium/background/background.component';
+import { GameComponent } from './rout/resume/compendium/game/game.component';
+import { PosterComponent } from './rout/resume/compendium/poster/poster.component';
+import { CompendiumComponent } from './rout/resume/compendium/compendium.component';
 
 
 @NgModule({
@@ -185,7 +188,8 @@ import { PosterComponent } from './rout/resume/complete/poster/poster.component'
     PropComponent,
     TextureComponent,
     BackgroundComponent,
-    GameComponent
+    GameComponent,
+    CompendiumComponent
   ],
   entryComponents: [
     OceanSunsetComponent,
@@ -231,6 +235,7 @@ import { PosterComponent } from './rout/resume/complete/poster/poster.component'
     MatChipsModule,
     MatCheckboxModule,
     MatInputModule,
+    MatTableModule,
   ],
   providers: [
     Title,

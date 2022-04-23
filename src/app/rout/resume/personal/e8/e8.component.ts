@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 // ^ This has to be in the same component as the Modal Button? ^
-import {OceanSunsetComponent} from './ocean-sunset/ocean-sunset.component';
-import { ChessSocZeroComponent } from './chess-soc-zero/chess-soc-zero.component';
-import { NorthernCloudsComponent } from './northern-clouds/northern-clouds.component';
-import { NightNebulaComponent } from './night-nebula/night-nebula.component';
+// import {OceanSunsetComponent} from '../../compendium/background/ocean-sunset/ocean-sunset.component';
+import { ChessSocZeroComponent } from '../../compendium/logo/chess-soc-zero/chess-soc-zero.component';
+import { NorthernCloudsComponent } from '../../compendium/background/northern-clouds/northern-clouds.component';
+import { NightNebulaComponent } from '../../compendium/background/night-nebula/night-nebula.component';
 // ^ Probably-Terrible-Idea Individual Modal Refrences ^
 
 @Component({
@@ -23,25 +23,25 @@ export class E8Component implements OnInit {
   }
   // The following is probably a terrible idea
   // Individual Angular Material Modal Boxes
-  EnvightOne() {
-    // alert(123);
-    // ^ Testing reasons ^
-    this.dialog.open(OceanSunsetComponent);
-  }
-  EnvightTwo() {
-    // alert(123);
-    // ^ Testing reasons ^
-    this.dialog.open(ChessSocZeroComponent);
-  }
-  EnvightFive() {
-    // alert(123);
-    // ^ Testing reasons ^
-    this.dialog.open(NightNebulaComponent);
-  }
-  EnvightEight() {
-    // alert(123);
-    // ^ Testing reasons ^
-    this.dialog.open(NorthernCloudsComponent);
-  }
+  // EnvightOne() {
+  //   // alert(123);
+  //   // ^ Testing reasons ^
+  //   this.dialog.open(OceanSunsetComponent);
+  // }
+  // EnvightTwo() {
+  //   // alert(123);
+  //   // ^ Testing reasons ^
+  //   this.dialog.open(ChessSocZeroComponent);
+  // }
+  // EnvightFive() {
+  //   // alert(123);
+  //   // ^ Testing reasons ^
+  //   this.dialog.open(NightNebulaComponent);
+  // }
+  // EnvightEight() {
+  //   // alert(123);
+  //   // ^ Testing reasons ^
+  //   this.dialog.open(NorthernCloudsComponent);
+  // }
 
 }

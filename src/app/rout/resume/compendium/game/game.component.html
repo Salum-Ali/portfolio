@@ -1,0 +1,87 @@
+
+<div class="completed" *ngIf="hasRoute('completed')">
+	<p>
+		Completed projects will go here. check back later for more progress
+	</p>
+</div>
+
+<div class="ongoing" *ngIf="hasRoute('ongoing')">
+	<h1>
+		Solo Game Projects
+	</h1>
+	<table class="JamList" id="Indie">
+		<thead>
+			<tr>
+				<th colspan="5">
+					<h2>
+						Project Regional
+					</h2>
+				</th>
+			</tr>
+			<tr>
+				<th colspan="5">
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat optio esse perferendis quibusdam dicta veniam ea fuga. Cumque voluptate repudiandae similique, cum eveniet doloribus tempora, enim deleniti quibusdam sequi deserunt!
+					</p>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<h2>
+						Release Date
+					</h2>
+				</th>
+				<th>
+					<h2>
+						Game
+					</h2>
+				</th>
+				<th>
+					<h2>
+						Role
+					</h2>
+				</th>
+				<th>
+					<h2>
+						Aditional Credits
+					</h2>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					TBD
+				</td>
+				<td>
+					Voyage
+				</td>
+				<td>
+					Solo Project
+				</td>
+				<td>
+
+				</td>
+			</tr>
+			<tr>
+				<td>
+					TBD
+				</td>
+				<td>
+					New Frontier
+				</td>
+				<td>
+					Solo Project
+				</td>
+				<td>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="archived" *ngIf="hasRoute('archived')">
+	<p>
+		Archived projects will go here. check back later for more progress
+	</p>
+</div>
