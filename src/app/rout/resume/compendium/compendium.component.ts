@@ -20,7 +20,7 @@ export class CompendiumComponent implements OnInit {
     // },
     {
       path: 'backgrounds',
-      label: 'Background & Environment Art'
+      label: 'Background, Texture & Environment Art'
     },
     {
       path: 'jams',
